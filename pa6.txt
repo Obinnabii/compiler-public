@@ -1,0 +1,525 @@
+d288a34 done
+ac8e538 cse
+7a777ac Somewhat working let's goooooo
+d92010c DCE && Framework for CSE
+d998320 T-minus 2 days
+6c54f1a Available Expressions :BopIt:
+dfb9f0e Merge pull request #106 from the-compiler-wizards/dot
+8d8325e Merge branch 'master' into dot
+1a020e7 Merge pull request #107 from the-compiler-wizards/DFA-1
+9b6c349 fix issue with iff adding pointles labels and jumps
+870d9cc Live Var is prob broken but proof of concepts :fingersCrossed:
+7684168 DFA might be working :Smile: Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com> Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+442f274 updated some CLI stuff, help description
+8e75cfc add CLI option strings for the dot formatting generation
+5bb9b7a Basic implementation for converting CFGs to dot syntax structured text; TODO: support for writing to file before and after optimizations via CLI
+46359ae Infrastructure
+e566102 improve debug comments
+900287a Merge pull request #96 from the-compiler-wizards/pa5bug
+35c8753 Merge branch 'pa5bug' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into pa5bug
+e5ae2fd bug fix
+2f32f06 Merge branch 'pa5bug' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into pa5bug
+dd900f4 chmod
+dd20743 We fixed it
+19c3b1f Recent version
+9292e77 Merge branch 'pa5bug' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into pa5bug
+189280e Current changes
+207893b Merge branch 'pa5bug' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into pa5bug
+2cc6465 fix binops
+242b8a9 Fixed array (issue in move)
+334d606 Assembly checker
+1e4aa80 Current changes
+3a6e4d9 Fixed CJUMP tile bug
+d7dfc33 current rendition
+b4b7fab current changes for running assembly code
+fe46877 Fixed minor bug
+6dd4f35 Merge pull request #95 from the-compiler-wizards/tiling
+0fb6af6 Merge branch 'tiling' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into tiling
+3dca980 current semi-working version
+d884315 Update TrivialRegisterAllocator.java
+c39e936 Update TrivialRegisterAllocator.java
+966698d Current version that produces assembly
+bd3ff1c clean up code to move into and out of the register
+b3699f1 Merge branch 'tiling' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into tiling
+0fb4110 Added pseudoinstructions for func pro- and epilogues, saving and restoring registers; added (obsolete?) info about number of return vals
+f7c86ed trivial allocator, allocates trivially :)
+1b46666 add trivial register allocation stuff
+4cd5dbb Basic Trivial Allocation on the cusp of implementation
+7fd3b9d instruction
+05e8ef5 Print out temps
+899fc24 Update TrivialRegisterAllocator.java
+64eb063 Merge pull request #93 from the-compiler-wizards/reg_alloc
+557056f Fix getRegister
+9422627 Merge pull request #92 from the-compiler-wizards/reg_alloc
+37a6973 Merge pull request #91 from the-compiler-wizards/pa4bugs
+56e534c Update RegisterResult.java
+745d237 Update TrivialRegisterAllocator.java
+4d04a0c Update TrivialRegisterAllocator.java
+27986e6 Merge pull request #90 from the-compiler-wizards/tiling
+2f860bd Added failed tests from PA4
+ee50fdb Fixed and/or short-circuiting
+6835bb4 Added length functionality
+9a9c6d7 Fixed mod bug
+50a199d Merge remote-tracking branch 'origin/tiling-stmts-obi' into tiling
+6009e0b Cleaned multiplication, added division and modulo implementation
+36a07c7 tile statements
+744bc54 More tiles for shift operations, boolean binary operations
+376b67e Basic addition and subtraction
+44c0a59 Added const, temp, and name
+849c409 Added equality binop tiles
+3019cd6 Changed instruction constructor to use temps
+4519e6e add tiling infrastructure
+bc5e547 Merge pull request #89 from the-compiler-wizards/simulation
+aabc8e8 change tester
+2a1402e fix use
+fda9977 add minor fix to tracing
+2190e70 Fix minor tiling issues
+857fe82 Merge pull request #85 from the-compiler-wizards/simulation
+9f321f6 basic set-up for register allocator(s) and tiling
+560461d Fixed array concatenation bug
+25ffb83 Added bounds checking to array access for assignment
+9c2d30d Fixed minor logical error (wasn't accessing memory of address from recursive accessing)
+e378a3c Fix reordering
+6462e9f The character fix :)
+6d4e0b1 Comment out reordering
+88bbaad Merge branch 'simulation' of github.coecis.cornell.edu:the-compiler-wizards/compiler into simulation
+a3ad444 Code cleanup and added --irgen
+d1848eb add CFG stuff
+c27d327 merge
+74e6d3d Current iteration
+30c22d2 fix minor issue
+2b09532 Fix Assignment issue where functions are not call
+e1c15da fixed return error
+a64111b fix minor build errors
+a406f08 increment I counter
+fdb3d51 acount for moving argument registers
+7687a83 Separated given tests from custom ones
+dcce179 Added lowering for returns
+0db7b8f Fixed IRExp lowering
+0004302 Merge branch 'simulation' of github.coecis.cornell.edu:the-compiler-wizards/compiler into simulation
+859b5c1 Fixed cjump lowering incorrectly
+9be2f0d increase debug level of the simulator
+badedfd current testing file exposes issue
+d7c99a0 current iteration -- bug in ULT should be visible
+2ccb985 Fixed bounds checking label bug
+981e66d Fixed basic errors with lowering
+da9a735 dummy output file
+28b8f3e fix return
+99214c9 slight changes
+fa50c4f current iteration
+721514f testing folder pa4
+857d55f Merge pull request #83 from the-compiler-wizards/nodaemon
+814b1dc Merge pull request #84 from the-compiler-wizards/irBlocks
+791053d Fixed traces
+14e5839 Merge pull request #82 from the-compiler-wizards/ir-translate-1
+961f3ad Merge branch 'master' into ir-translate-1
+992af1e fix minor errors
+5176fa9 handle the edge case for fixing jumps
+2ad16bb fix jumps
+65143ae IR Blocks/CFG work to some degree
+138d15d Added dummy temp translation for UScores
+ba973d4 Modified temp names to (hopefully) avoid name overlapping errors with user variables
+d2a7bd8 Added --no-daemon flag
+eccfa5c Assignment IR Translation implemented
+bf74c19 Merge pull request #81 from the-compiler-wizards/ir-translate-1
+50e1bd5 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into ir-translate-1
+f8726eb Merge pull request #80 from the-compiler-wizards/irConstFold
+b2f287e add more block information
+9a85173 First attempt at array concatenation translation
+2e71019 Changed LT in loop to ULT
+c7a0029 Added test case for blocks
+3e360a8 jesus christ
+0aab5e6 Added logic for creating maximal basic blocks
+885bfd7 Fixing conflicts
+de1fae9 Minor change
+d4ffaf2 In progress array initialization
+00359a1 Merge pull request #78 from the-compiler-wizards/ir-translate-2
+55df3ce Merge branch 'master' into ir-translate-2
+6da984f The previous was Program -> use filename instead of base name
+cc13faa use filename insted of basename
+9da94d6 add names to parse trees
+7368a24 Method def
+0c1ea6c Minor formatting tweaks, added test for const fold
+963c836 While
+c7e6e48 If
+80c8038 CTranslation - getting e1, e2 from And and Or and e1 from Not
+d4e09bd CTranslation
+de5e859 MethodCall
+24cb934 Added const fold to binop
+341d0eb Merge pull request #77 from the-compiler-wizards/irLower
+900299f Merge pull request #75 from the-compiler-wizards/fixPA3Bugs
+9f10557 Fixed empty arrays not type checking
+58e319e Fixed arrays containing function calls
+b460c13 Fix uscore on multireturn&array index type on decl
+9be51b2 Fixed no checking if same name multiple functions
+388f70f Idetifier ir translation
+924684e Character literal ir translation
+0444a15 Array literal ir translations
+1bacc06 Array access IR Translation implementation
+50e3ef2 finish up procedure calls
+674fdd7 generalize Visitor errors
+0a74a50 generate function names according to ABI standards
+e3fa625 Only add expression to lowered transl. if not null
+b62cf83 Added cjump, call, and callstmt
+2ef6bff procedure call
+8491f5b linting
+e4fa447 check if a Variable is an underscore
+b9ca0eb return
+9b6f89b Declaration
+213a54d Added ESEQ, SEQ, and MOVE
+2ff2a8b Forgot to lint
+6b4a0c7 Added binops, added test to confirm lowered
+ced9222 Modified to include ULT changes from Ed
+c177e9c Finished binops (minus array indexing and concatenation), unops
+aada3cc Merge branch 'ir-translate-2' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into ir-translate-2
+43a4e89 block
+1278b75 Standardized label/register name generation
+adc3e1f block
+09bf2dd Changes to standardize C Translation + variable names and getters
+573df2c Added a static incrementer labelGen field for ensuring unique labels are created -- give the new IRLabel() the string name you want and it will append a unique integer value to the end, allowing reuse of common label shorthands from class (make sure you use the name() function if you want to use the string in other IR expressions however)
+ea94f56 Made value a public field
+9c8fa98 Basic, unoptimized implementations of some of the binops
+d9095ef Added a static CTranslate field to assist with boolean expression translations
+a36d965 Added getter for IRTranslation
+38cfc46 Moved plus irtranslate logic to binop
+bf3ce33 Made IR Lowering testable
+d74b046 Modified for errors -- temporary fix changing SemanticError to TypeException, TODO fix this
+07697e8 Added basic exprs
+ac6e2c0 Added lower visitor
+a78fc5f Made the IRTranslation Visitor pattern and translated booleans and integers.
+1697a56 Merge pull request #74 from the-compiler-wizards/IR-skeleton
+5bf6a7d Add cs4120 ir skeleton
+6a8d7a7 Merge pull request #58 from the-compiler-wizards/fixImports
+dadd47b Fixed imports so they work on autograder
+9cdffe3 Merge pull request #56 from the-compiler-wizards/newtests
+2ec4b0a More complex function call examples, checking if they work in various expressions
+019a932 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into newtests
+0784cd6 Merge pull request #57 from the-compiler-wizards/fixLength
+12eab95 Fixed length
+3128212 Undid swap of line and col
+5608dd5 Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+ed59026 Mutual recursion testing
+01a59d4 Statement error testing
+486b55b fix error messages
+8e529a0 Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+75d5d11 Merge pull request #54 from the-compiler-wizards/error-message
+29c78a1 Add default typechecking behavior
+648920f Merge pull request #53 from the-compiler-wizards/error-message
+523b75a Merge pull request #52 from the-compiler-wizards/newtests
+5fe1399 add functionality to print errors according to spec
+72bf44a moved file
+14b3485 modify Error classes to match Specifications given
+0e4e1c6 Make Errors adhere to PA3 specs
+f7c7701 Added another expression failure case for function arguments
+596bddb Type checking expressions -- should fail
+78f4d7f Modified to run new tests
+99ef378 Merge pull request #51 from the-compiler-wizards/newtests
+40c3e0e Modified to run sanity tests
+fb23a7f Missed file in first add
+e54a247 Added release sanity tests
+681cf5b Merge pull request #50 from the-compiler-wizards/function-collector-3
+8efd2fd Merge pull request #49 from the-compiler-wizards/line-col-2
+481c344 fix minor error with swapped lines and columns
+c8e81ca reduce function collection strictness (allow multiple definitions in the same file)
+27dbdcb Fix (swapped) row and col #s
+4bf6af3 Merge pull request #47 from the-compiler-wizards/fixUscore
+8b92837 Merge branch 'master' into fixUscore
+cb1943c Merge pull request #46 from the-compiler-wizards/uscore-var
+9e0a126 Fixed unops not type checking correctly
+6035fd4 Fixed uscore being allowed for non function calls
+08f6073 use null rather than IntType. Clearer (implementation)
+c35609d Merge pull request #45 from the-compiler-wizards/uscore-var
+fa60e5a Remove UscoreDecl from Declaration Class
+4db53e3 Merge pull request #43 from the-compiler-wizards/typecheckStatements
+65551b3 Merge pull request #44 from the-compiler-wizards/line-col
+69ebd22 Add lines and columns
+2b9ab09 All type checking done! (added procedure calls)
+0d1d806 Added multiassign!
+7d37367 Added typecheck arr index assign
+53ba7a0 Added length to type checking
+5c293e1 Merge pull request #42 from the-compiler-wizards/typecheckStatements
+d2545d8 Merge branch 'master' into typecheckStatements
+744a399 Added type checking w/ method calls
+da43c95 Merge pull request #40 from the-compiler-wizards/function-collector-2
+f8e77c5 Merge pull request #41 from the-compiler-wizards/context-add
+d8d8f6f Make getType throw a type exception
+e4e7fbc fix test structure for typechecking
+3108d70 Merge pull request #39 from the-compiler-wizards/newtests
+a629892 add a basic test for function collection
+0b20dfa override functions in Program
+13aed7c Test cases exposing lexer issues revealed during PA2
+776864a Run new lexer tests
+7a2cd60 catch ContextException in add
+32684da Modified string errors to better reflect their test cases, e.g. if there is a bad character escape in a string, give the line and column number of that instead of the start of the string
+41189c9 Merge pull request #38 from the-compiler-wizards/context
+6f10c1c Implement FunctionCollection
+64a0b7e Added new EOF symbol in order to properly raise parser exception when token stream previously ended unexpectedly - now, an EOF token will appear, which will allow the parser to know where it came from and properly terminate (without previous casting exceptions)
+cb86998 add functionCollection methods and a method to generate a Typechecker with a given context
+12c0b3c Run new parse tests
+75b433f fix ParseTree Typo
+f357203 New test cases to expose EOF issues
+a634ae9 Create a ParseTree wrapper class
+64953c8 add function collection methods to the function collector
+feefd42 add a method to get the name of a method declaration
+475d902 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into newtests
+18c7784 Modified declarations to disallow size declarations for arrays while also assigning elements
+a003bb2 Added fromList constructor to get an ArrayAccess object when parsing an assignment operation
+0765f21 Modified add to throw an exception if id is already bound, added setter documentation to Context.java
+290c134 Current progress toward fixing last test case, not finished
+ea33281 Added typechecking for returns
+6bc6cff Merge pull request #37 from the-compiler-wizards/function-collector-1
+5d0c2db Merge pull request #36 from the-compiler-wizards/function-collector
+76a1801 Merge branch 'function-collector-1' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into function-collector-1
+fe2f930 add a method to get filenames from use statements
+994327e add a method to get filenames from use statements
+aef6499 get method declarations from an interface
+9a0fd12 missedthis file in the previous pr
+636263f get a list of all the method declaration made in a program
+8549b58 Merge branch 'function-collector-1' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into function-collector-1
+24f8de3 remove Xilexer.java before building.
+2e5cab6 get method declarations from an interface
+8d1b7f5 missedthis file in the previous pr
+ea07493 get a list of all the method declaration made in a program
+2be5565 Stop methodDef from implementing Line
+b566ec4 stop stmt and Expr from implementing Line
+2e36309 get method declarations from an interface
+39c6ef6 missedthis file in the previous pr
+e7a3924 get a list of all the method declaration made in a program
+fa68e5a annotate gitignore to match prev commit
+8344ded ignore lexer and parser generated code
+3f54d51 get rid of lines ( a pointless abstraction)
+a86d5c7 Modified for correctness
+f804cd7 Modified to pass new tests (all except arrsizedec)
+7dd187a Added typechecking for method defs(not collection)
+60d04c1 Added if type checking, fixed while scopes
+43cf7f6 Merge pull request #34 from the-compiler-wizards/typecheckStatements
+95f7efc Fixed merge conflicts, deleted XiLexer.java~
+1b6c41b Merge branch 'master' into typecheckStatements
+b85cd00 Merge pull request #33 from the-compiler-wizards/newtests
+eaac5d8 Fixed int pretty print removed by accident
+26cc97e Merge pull request #32 from the-compiler-wizards/function-type
+6d805f3 Added while & block typechecking
+7814489 Merge pull request #31 from the-compiler-wizards/context
+14ba7ee Update MethodDeclaration.java
+66aa6f7 Updated script with new parse test files
+b8ef29f New tests for PA2 issues
+87d2171 Fixed error throwing line and column numbers for YYBASE
+9498b19 Add an is procedure method
+29680c4 Add function Types to simplify function collection
+c80f99c Added assignments (for single vars) and underscore
+53a7751 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into context
+09daf31 modify declarations to simplify methodType logic
+381c563 Added declaration typechecking
+6bced37 Fixed try/catch for setReturnType exception
+93faf08 Merge pull request #30 from the-compiler-wizards/node-pos-1
+8c12383 removed extraneous line
+e0bb793 Implemented automatic returnType resetting when context returns to top level scope
+3ec2886 Create a type for methods
+d41e333 Add equality to declarations - use Node type rather than create redundant code
+31bf480 make type protected to simplify declaration logic
+cd2c71a Simplify line and column setting for typechecking purposes
+9fce0f5 Merge pull request #29 from the-compiler-wizards/node-pos-1
+9354aa4 add getters and setters for columns and lines
+d441401 make filewriter generation cleaner
+e86b7e8 Merge pull request #27 from the-compiler-wizards/typechecking
+dcca954 Fix .typed in wrong loc
+5a527b2 Merge branch 'master' into typechecking
+1994c76 Merge pull request #26 from the-compiler-wizards/cli-2
+a72ee70 Merge branch 'master' into cli-2
+bd8a5c9 Merge pull request #24 from the-compiler-wizards/context
+e2a9eb4 Identifier type checking added
+ffed11f Added typecheck for array access
+e597a29 Array binops and arr literals working properly
+b46499c Add typecheck, srcpath and libpath functionality to main
+c4db42e fix javadoc typo
+f2c4728 add functionality to get the library and source path from the cli
+3f73e2b add srcpath, libpath and typecheck to the cli
+9c36c3f :Merge branch 'context' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into context
+febda6d Extracted type equals override to Type.java (minus ArrayType which gets its own override)
+ce6c36b Merge branch 'master' into context
+fb60500 Refactor the CLI
+d3217a4 Merge branch 'master' into CLI-1
+46adf2b Lint master and remove linter reliance on git (#23)
+972fe6f Refactor cli code - handle parsing and lexing logic in main - remove unnecessary cli code - use Java FileNameUtils API - add a prettyPrinter debug mode
+7749a77 Added typechecking for unops
+5bdccf3 Added array literals typechecking
+1ff6118 All binops type checking except arrays
+7801a50 Fixed so new AST actually built
+9ac178e Binop type checking added
+2791c74 removed classpath
+e007420 Removed old tester
+98bd77a Linting on files + bug fixes on contextdefault implementation
+0a038bd Linted
+dee7078 Added framework to test typechecking in CLI
+373cee0 Create cli functions that reduce the load of CLI
+5757268 create hasOption method
+4cdbf9f Small testing environment
+c3385e1 Fixed import statements
+f13da13 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into context
+ef2f266 Linting (#21)
+f35336c Merge pull request #22 from the-compiler-wizards/visitChildren
+fa33449 Added visitChildren to rest of nodes
+6fa3dd8 Added visitChildren for all literals and interfaces
+2074a2c Added appropriate throws statements
+2b45ea2 Implemented all basic functions
+c3362f4 Began basic context implementation
+74a2ac7 VisitChildren added for binops
+e437e95 Added back return type to context
+fa36277 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler
+5bb0abb Added return types to contex interface
+f42be49 Properly document interfaces
+f957a6e Add Exceptions to a bespoke package and Create a stubbed interface for type checking
+2d6a426 Update BuildAndLint.yml
+c1b0f37 remove yaml file
+4a0c9a3 improve workflow
+9726ac9 Update BuildAndLint.yaml
+01324db Linting and testing module
+6351e53 add test for loose statement
+3598143 Improve submission script
+05b93a9 improve robustness of the parser test
+b488b1e Improve javadoc specifications
+7151c01 remove stmtb from grammar
+0ddbb09 https://github.coecis.cornell.edu/the-compiler-wizards/compiler
+8e911dd don't recognize stmts as lines
+cb89cf2 Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+011a9f4 Added and cleaned up parser tests
+e712f7f ignore parser.java
+19b7cde remove duplicate lexerException file
+6e1233d improve submission script
+e56b779 Add parserExceptions - move parser and lexer Exceptions to util folder - catch Exceptions correctly in the cli
+4e84dfa Fixed cup/xic-build so script builds everywhere
+3773c80 prettyprinting is working - Add a Class for Binary Expressions - Fix Character toString function - Basic Parser error support - Fix arrray Access error - Advanced typing support
+13b9408 interfaces parsing correctly - make a minor change to the lexer (comments /R was being recognized as the end of a comment) - fix test script - make Interface and MethodDeclaration classes
+0c0447c revamp parser
+626f9a7 Overload Return constructor
+fc283d6 Use PrintWriter Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+cac005e fix minor compilation error
+59ebb1c use Unified list prettyPrinting
+8773289 Create a type for array literals
+be0db0d Fix parser unop and binop fallthrough
+360db4e Switch symbols for braces and brackets
+74e3cd3 fix minor codewriter issues
+930505d Fix parser conflicts
+b45e61a fix minor syntactical bugs
+99fc844 partial parser AST generation
+03e7535 Create AST classes
+edee858 Add codeWriter
+b66614f Crete Literals
+914b468 Added more nodes to the AST
+e086756 Make AST expressions
+2b9f559 Add Node interface
+aab83c5 Add EOF lexing options
+edb50e8 Add loops to the parser
+b28c698 Add more lexer test cases
+6ead9dd Improved parser - Recognize types - Recognize unops - Recognize binops
+ddefc4d Minor lexer modification
+c1420fb Improve program grammar structure
+371c578 Add function calls to grammar
+e645ddd Minor changes to the cup script
+d3e1bed Improve gitignore - Ignore .DS_store - Don't ignore java_cup.jar
+f668cc9 Create makeshift AST file structure - Add stub files that will be improved upon
+d1ebb2f Improve lexer - Add a COMMENT state - Improve robustness of lexer testing suite
+171f4be Remove XiLexer.java before building
+215c8a4 Improve grammar stucture - Add declaration - Add array acces expressions
+1c30f06 Barebones implementation of grammar for parsing
+ef00ae1 Made unique tokens for each symbol
+432d137 Improve Cli.java documentation
+02002a4 Additional formatting
+fb9b412 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+2e67422 Code formatting
+50e5bdd Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+70590ce Code cleanup
+4dd8b32 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+7b6c348 Functionality for variable number of leading zeroes (at most 3, depending on particular) in hex to escape character conversion
+3c2420a Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+792255a Added missing cached external library
+65757cf Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+0fd7b03 remove stray asterisk in hex conversion
+49c7739 Test extra escape character hex conversions
+4cffdb4 Added a test case for nonprintable characters
+9d18c6a Removed deletetion of XiLexer.java from xic-build
+044efc7 Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+6a20790 Made xic and xic-build work when run from any working directory
+d474ab0 Add conversion for unicode of common non-printable characters
+208ccd0 Modified line endings so all files are *nix format
+8272cde Added script for easy running of test suite
+02de6ba Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+4fec261 Fixed submit.sh exluding lexer-generated java file
+58b5b56 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+4470bae Remove case sensitivity from hard-coded unicode escape character conversion
+d4dea3c Added .gitattributes to fix line endings as recommended by TA on Ed
+0809b85 Changed behavior of Cli.java when given nonexistent or non-xi files
+34c5a22 Added new test, modified previous tests for new spec
+7fbaa46 Change main file to reflect new packages
+247ad17 Fix CLI dependencies
+c62a898 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler
+2909013 Switch to Gladle-JFlex - Rework file structure to account for this change
+93302a0 Ignore compiled lexer
+760a39c Fixed row number bug
+1e99f52 Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+34da6d0 Switched from jflex to gradle-jflex plugin
+537b427 Change gradle main class to reflect package changes
+ab2f2c9 Changed Kleene Star to + to avoid matching empty string
+aad74eb Hard-coded unicode escape characters to get converted to string representation
+6302aa7 move all test files to the same location
+4396106 Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+f418dbb Test for empty string
+00b3bbb Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+388d698 Fixed typo in test
+bb58759 Improve file structure - Make packages reflect file structure - Make Tokens public - Improve naming
+f719e45 Moved multiline test
+3867638 Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+1c20e80 Removed redundant testing files
+5f75bc4 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+fc5bb7f Testing that multi-line string produces an error
+ced88eb Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+af3530d Added .lexedsol files for tests, added tests to xthScript
+abe4e1c Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler
+ffd8236 improve lexer documentation
+1dbd8b7 Moved error check to last line of file
+55145e6 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+bd99afd Cleaned string recognition expressions
+f62fc1a Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+6d9c80f Fixed -D option
+4062642 Bug fix - \ now reserved as escape character for string and character literals
+2a6a442 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+87cc726 Added escape character recognition for character literals - just \\, \n, and \'
+0936a8c Fixed custom xth script
+f5721ec Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+56feaff Added custom test for identifiers
+9361fe4 Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+ab00aa8 Added example test file
+9f22c33 Minor additions to the test of character escapes
+34bba42 Added test for lexing character literals
+95aecf3 Added test files
+1f380a5 Minor change to detection of non .xi files
+c596816 Remove unused lexer Macros
+915eb93 Fixed submit.sh
+e31532e Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+57050b3 Improve lexer and fix bugs
+2a36afd Script for zipping submission components
+7bceb84 Ignore zip files
+f1c8e2b Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+10b0cf1 Added script for archiving code for submission
+d3fe38c Added more functionality to the CLI
+529ece5 Added cached jars to git repo
+00c6e9d Converted build.gradle to build offline
+bfc27f8 Code cleanup
+e0c424b Added a basic CLI
+b14e4ca Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+3ea837d Gradle compiles added plugin (CLI commons)!
+2595cdd Lex Strings and Characters
+29c81c5 Start String and Comment matching Co-authored-by: apd67, coa22
+ace7569 Create basic Lexer Flex file
+a8014ff Add Lexer testing code
+e1d9a8c Compile a list of tokens
+fcc14b4 Minor gradle bug fix (prevents building)
+f07b132 Changed from Java library to Java app
+1f0887d Compilable and runnable
+0a7ba2f Added xic script
+c3e2605 Added initial build script
+9b2af84 Gradle init
+923ca1c Add gradle gitignore
+d7c93c4 Gradle setup
+48890f9 Create .gitignore
+60f813d Create README.md

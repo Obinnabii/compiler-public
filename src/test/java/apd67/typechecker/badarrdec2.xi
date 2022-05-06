@@ -1,0 +1,3 @@
+main() {
+    arr:int[false]
+}

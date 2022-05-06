@@ -1,0 +1,5 @@
+1:1 character @
+2:1 character $
+3:1 character #
+4:1 string @$#
+5:1 error: Lexing error

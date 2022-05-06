@@ -1,0 +1,12 @@
+#!/bin/bash
+MY_PATH=`dirname "$0"`
+rm ${MY_PATH}/src/main/java/apd67/lexer/XiLexer.java
+
+# Lint the code
+java -jar deps/libs/linting/google-java-format-1.9-all-deps.jar --replace $(find src/* -type f -name "*.java")
+
+java -jar ${MY_PATH}/deps/libs/main/java_cup.jar ${MY_PATH}/src/main/java/apd67/parser/parser.cup
+mv sym.java ${MY_PATH}/src/main/java/apd67/parser
+mv parser.java ${MY_PATH}/src/main/java/apd67/parser
+#jflex src/main/java/apd67/lexer/XiLexer.flex
+gradle -b ${MY_PATH}/build.gradle --offline build

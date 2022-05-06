@@ -1,0 +1,676 @@
+Testpath "/home/vagrant/shared/compiler/src/test/java/apd67/" specified.
+Test script: xthScript
+  xic-build: ------- CUP v0.11b 20150326 Parser Generation Summary -------
+  0 errors and 0 warnings
+  49 terminals, 35 non-terminals, and 113 productions declared, 
+  producing 187 unique parse states.
+  0 terminals declared but not used.
+  0 non-terminals declared but not used.
+  0 productions never reduced.
+  0 conflicts detected (0 expected).
+  Code written to "parser.java", and "sym.java".
+---------------------------------------------------- (CUP v0.11b 20150326)
+
+> Task :generateJflex
+
+Warning in file "/home/vagrant/shared/compiler/src/main/java/apd67/lexer/XiLexer.jflex" (line 88): 
+Expression matches the empty string, which may lead to non-termination.
+    ""            { yybegin(YYBASE); if(isInterface) return token(sym.IXI, "ixi"); }
+
+Warning in file "/home/vagrant/shared/compiler/src/main/java/apd67/lexer/XiLexer.jflex" (line 202): 
+Rule can never be matched:
+    [\n\r]        { throw new LexerException(defaultErrorMessage,
+
+> Task :compileJava
+Note: /home/vagrant/shared/compiler/src/main/java/apd67/cli/Main.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :jar
+> Task :startScripts UP-TO-DATE
+> Task :distTar
+> Task :distZip
+> Task :shadowJar
+> Task :startShadowScripts
+> Task :shadowDistTar
+> Task :shadowDistZip
+> Task :assemble
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :check UP-TO-DATE
+> Task :build
+
+BUILD SUCCESSFUL in 3s
+10 actionable tasks: 9 executed, 1 up-to-date
+OK
+  Test collection: xic (Test --help)
+    []: OK
+    [Compiler's standard output:
+    usage: xic [options] <source files>
+ -d <path>                Specify where to place the generated .s assembly
+                          output files
+ -D <path>                Specify where to place generated diagnostic
+                          files i.e. <path>.
+ -h,--help                Print a synopsis of options.
+ -irg,--irgen             Generate intermediate code.
+ -irr,--irrun             Generate and interpret intermediate code.
+ -l,--lex                 Generate output from lexical analysis.
+ -libpath <path>          Specify where to find library interface files.
+ -O                       Disable optimizations.
+ -ocfg,--optcfg <phase>   Report the control-flow graph at the specified
+                          phase of optimization.
+ -p,--parse               Generate output from syntactical analysis.
+ -pr,--print              Print syntactical analysis output to the command
+                          line.
+ -sim,--irsim             Simulate intermediate code.
+ -sourcepath <path>       Specify where to find input source files.
+ -target <arg>            Specify the operating system for which to
+                          generate code (default: Linux). Other OS's not
+                          supported.
+ -tc,--typecheck          Generate output from semantic analysis.
+]
+  xic (Test --help): 1 out of 1 tests succeeded.
+  Test collection: xic (Test --irrun -sim)
+    arracc01.xi: OK
+    [Compiler's standard output:
+    0
+1
+2
+3
+4
+]
+    arracc02.xi: OK
+    [Compiler's standard output:
+    Index: 0
+0
+Index: 1
+1
+Index: 2
+2
+Index: 3
+3
+Index: 4
+4
+]
+    arracc03.xi: Failed to compile: xic exit code 1
+    arracc07.xi: OK
+    [Compiler's standard output:
+    Index: 0
+Index: 0
+1
+1
+0
+1
+2
+3
+Index: 1
+Index: 1
+1
+1
+2
+1
+2
+3
+Index: 2
+Index: 2
+3
+1
+2
+3
+2
+3
+Index: 3
+Index: 3
+3
+1
+2
+3
+4
+3
+Index: 4
+Index: 4
+3
+1
+2
+3
+4
+5
+]
+    arracc08.xi: OK
+    [Compiler's standard output:
+    Index: 4 2
+Index: 4 2
+8
+]
+    binary01.xi: OK
+    [Compiler's standard output:
+    3
+1
+8
+0
+3
+1
+]
+    binary06.xi: OK
+    [Compiler's standard output:
+    f() called: 1
+f() called: 1
+1
+f() called: 1
+f() called: 0
+0
+f() called: 0
+f() called: 1
+0
+f() called: 0
+f() called: 0
+1
+f() called: 1
+f() called: 1
+0
+f() called: 1
+f() called: 0
+1
+f() called: 0
+f() called: 1
+1
+f() called: 0
+f() called: 0
+0
+f() called: 1
+f() called: 1
+1
+f() called: 1
+f() called: 0
+0
+f() called: 0
+0
+f() called: 0
+0
+f() called: 1
+1
+f() called: 1
+1
+f() called: 0
+f() called: 1
+1
+f() called: 0
+f() called: 0
+0
+]
+    binary08.xi: OK
+    [Compiler's standard output:
+    f() called: {1, 2, 3}
+f() called: {1, 2, 3}
+1
+f() called: {1, 2, 3}
+f() called: {1, 2, 3}
+0
+f() called: {1, 2, 3}
+f() called: {1, 2, 3}
+0
+f() called: {1, 2, 3}
+f() called: {1, 2, 3}
+1
+f() called: {1, 2, 3}
+f() called: {1, 2, 3}
+0
+f() called: {1, 2, 3}
+f() called: {1, 2, 3}
+1
+]
+    binary09.xi: OK
+    [Compiler's standard output:
+    {1, 2, 3, 4, 5, 6, 7}
+{1, 2, 3, 4}
+{5, 6, 7}
+]
+    binary10.xi: OK
+    [Compiler's standard output:
+    f() called: {1, 2, 3, 4}
+f() called: {5, 6, 7}
+f() called: {1, 2, 3, 4}
+f() called: {1, 2, 3, 4}
+f() called: {1, 2, 3, 4}
+f() called: {1, 2, 3, 4}
+f() called: {5, 6, 7}
+f() called: {5, 6, 7}
+f() called: {5, 6, 7}
+{1, 2, 3, 4, 5, 6, 7}
+f() called: {1, 2, 3, 4}
+f() called: {}
+f() called: {1, 2, 3, 4}
+f() called: {1, 2, 3, 4}
+f() called: {1, 2, 3, 4}
+f() called: {1, 2, 3, 4}
+{1, 2, 3, 4}
+f() called: {5, 6, 7}
+f() called: {}
+f() called: {5, 6, 7}
+f() called: {5, 6, 7}
+f() called: {5, 6, 7}
+{5, 6, 7}
+]
+    binary12.xi: OK
+    [Compiler's standard output:
+    f() called: 1
+1
+f() called: 0
+1
+0
+f() called: 1
+1
+f() called: 0
+0
+0
+f() called: 1
+0
+f() called: 0
+1
+0
+f() called: 1
+0
+f() called: 0
+0
+0
+f() called: 1
+1
+f() called: 0
+1
+1
+f() called: 1
+1
+f() called: 0
+0
+1
+f() called: 1
+0
+f() called: 0
+1
+1
+f() called: 1
+0
+f() called: 0
+0
+1
+f() called: 1
+1
+0
+f() called: 0
+1
+f() called: 1
+0
+0
+f() called: 0
+0
+f() called: 1
+1
+0
+f() called: 0
+0
+f() called: 1
+0
+0
+f() called: 0
+1
+1
+f() called: 1
+1
+f() called: 0
+0
+1
+f() called: 1
+0
+f() called: 0
+1
+1
+f() called: 1
+0
+f() called: 0
+0
+1
+]
+    length01.xi: OK
+    [Compiler's standard output:
+    5
+]
+    length02.xi: OK
+    [Compiler's standard output:
+    4
+1
+2
+3
+4
+]
+    localdecl06.xi: OK
+    [Compiler's standard output:
+    25
+47
+20
+16
+42
+12
+done
+]
+    localdecl13.xi: Failed to compile: xic exit code 1
+    [Compiler's standard output:
+    Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+Index: 0
+]
+    [Compiler's standard error:
+    Exception in thread "main" apd67.ir.interpret.IRSimulator$Trap: Out of heap!
+	at apd67.ir.interpret.IRSimulator.malloc(IRSimulator.java:141)
+	at apd67.ir.interpret.IRSimulator.calloc(IRSimulator.java:155)
+	at apd67.ir.interpret.IRSimulator.libraryCall(IRSimulator.java:362)
+	at apd67.ir.interpret.IRSimulator.call(IRSimulator.java:220)
+	at apd67.ir.interpret.IRSimulator.interpret(IRSimulator.java:480)
+	at apd67.ir.interpret.IRSimulator.interpret(IRSimulator.java:507)
+	at apd67.ir.interpret.IRSimulator.leave(IRSimulator.java:386)
+	at apd67.ir.interpret.IRSimulator$ExecutionFrame.advance(IRSimulator.java:600)
+	at apd67.ir.interpret.IRSimulator.call(IRSimulator.java:241)
+	at apd67.ir.interpret.IRSimulator.call(IRSimulator.java:203)
+	at apd67.cli.Main.main(Main.java:142)
+]
+    localdecl14.xi: Failed to compile: xic exit code 1
+    [Compiler's standard output:
+    Index: 3
+Index: 2
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+Index: 1
+Index: 3
+Index: 2
+Index: 2
+Index: 1
+Index: 2
+Index: 1
+Index: 1
+Index: 0
+Index: 2
+]
+    [Compiler's standard error:
+    Exception in thread "main" apd67.ir.interpret.IRSimulator$Trap: Out of heap!
+	at apd67.ir.interpret.IRSimulator.malloc(IRSimulator.java:141)
+	at apd67.ir.interpret.IRSimulator.calloc(IRSimulator.java:155)
+	at apd67.ir.interpret.IRSimulator.libraryCall(IRSimulator.java:362)
+	at apd67.ir.interpret.IRSimulator.call(IRSimulator.java:220)
+	at apd67.ir.interpret.IRSimulator.interpret(IRSimulator.java:480)
+	at apd67.ir.interpret.IRSimulator.interpret(IRSimulator.java:507)
+	at apd67.ir.interpret.IRSimulator.leave(IRSimulator.java:386)
+	at apd67.ir.interpret.IRSimulator$ExecutionFrame.advance(IRSimulator.java:600)
+	at apd67.ir.interpret.IRSimulator.call(IRSimulator.java:241)
+	at apd67.ir.interpret.IRSimulator.interpret(IRSimulator.java:480)
+	at apd67.ir.interpret.IRSimulator.interpret(IRSimulator.java:507)
+	at apd67.ir.interpret.IRSimulator.leave(IRSimulator.java:386)
+	at apd67.ir.interpret.IRSimulator$ExecutionFrame.advance(IRSimulator.java:600)
+	at apd67.ir.interpret.IRSimulator.call(IRSimulator.java:241)
+	at apd67.ir.interpret.IRSimulator.call(IRSimulator.java:203)
+	at apd67.cli.Main.main(Main.java:142)
+]
+  xic (Test --irrun -sim): 13 out of 16 tests succeeded.
+  Test collection: xic (Test --typecheck)
+    badarrdec2.xi: OK
+    baduscoreassign.xi: OK
+    arrayfuncall.xi: OK
+    multiplefuncs.xi: OK
+    emptyarray.xi: OK
+    return.xi: OK
+    scope.xi: OK
+    exprs.xi: OK
+    useio.xi: OK
+    badadd.xi: OK
+    badnot.xi: OK
+    badeq.xi: OK
+    badneg.xi: OK
+    badlength.xi: OK
+    badarrdec.xi: OK
+    badarracc.xi: OK
+    badfcall.xi: OK
+    badargs.xi: OK
+    badif.xi: OK
+    badifelse.xi: OK
+    badreturn.xi: OK
+    badseq.xi: OK
+    badwhile.xi: OK
+    nonprcall.xi: OK
+    badprcall.xi: OK
+    baddecl.xi: OK
+    mutualrec.xi: OK
+    fcallexprs.xi: OK
+  xic (Test --typecheck): 28 out of 28 tests succeeded.
+  Test collection: xic (Test --typecheck)
+    arrayinit.xi: OK
+    arrayinit2.xi: OK
+    arrayinit2-full.xi: OK
+    ex01.xi: OK
+    ex02.xi: OK
+    ex03.xi: OK
+    ex04.xi: OK
+    ex05.xi: OK
+    ex06.xi: OK
+    ex07.xi: OK
+    ex08.xi: OK
+    ex09.xi: OK
+    ex10.xi: OK
+    ex11.xi: OK
+    ex12.xi: OK
+    gcd.xi: OK
+    insertionsort.xi: OK
+    mdarrays.xi: OK
+    ratadd.xi: OK
+    ratadd-full.xi: OK
+    ratadduse.xi: OK
+    spec1.xi: OK
+    spec1-full.xi: OK
+    spec2.xi: OK
+    spec3.xi: OK
+  xic (Test --typecheck): 25 out of 25 tests succeeded.
+  Test collection: xic (Test --parse)
+    all_binops.xi: OK
+    lits.xi: OK
+    blockstmt.xi: OK
+    minint.xi: OK
+    multioutput.xi: OK
+    uncomma.xi: OK
+    fcallindex.xi: OK
+    emptyarr.xi: OK
+    usea.xi: OK
+    length.xi: OK
+    arrbadind.xi: OK
+    arrsizedec.xi: OK
+    badint.xi: OK
+    blank.xi: OK
+    blanki.ixi: OK
+    uneof.xi: OK
+    uneofi.ixi: OK
+  xic (Test --parse): 17 out of 17 tests succeeded.
+  Test collection: xic (Test --parse)
+    ex1.xi: OK
+    ex2.xi: OK
+    ex3.xi: OK
+    spec1.xi: OK
+    spec2.xi: OK
+    spec3.xi: OK
+    gcd.xi: OK
+    ratadd.xi: OK
+    ratadduse.xi: OK
+    insertionsort.xi: OK
+    arrayinit.xi: OK
+    arrayinit2.xi: OK
+    mdarrays.xi: OK
+    add.xi: OK
+    beauty.xi: OK
+    io.ixi: OK
+  xic (Test --parse): 16 out of 16 tests succeeded.
+  Test collection: xic (Test --lex)
+    identifier.xi: OK
+    alluppercase.xi: OK
+    characterescapes.xi: OK
+    charliterals.xi: OK
+    moreidentifiers.xi: OK
+    multilinestring.xi: OK
+    nonprintable.xi: OK
+    operators.xi: OK
+    unclosedquotes.xi: OK
+    upperlowercase.xi: OK
+    moreescapes.xi: OK
+    onlycomment.xi: OK
+    commeof.xi: OK
+    doubleescchar.xi: OK
+    doublelitchar.xi: OK
+    maxint.xi: OK
+    minint.xi: OK
+    extrasingle.xi: OK
+    unclosedquote.xi: OK
+    dollar.xi: OK
+    bignum.xi: OK
+    dneesc.xi: OK
+  xic (Test --lex): 22 out of 22 tests succeeded.
+xthScript: 123 out of 126 tests succeeded.

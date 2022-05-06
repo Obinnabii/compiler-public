@@ -1,0 +1,14 @@
+(COMPUNIT
+ Main
+ (FUNC
+  _Imain_paai
+  (SEQ
+   (MOVE (TEMP args) (TEMP _ARG0))
+   (LABEL true_0)
+   (MOVE (TEMP x) (CONST 1))
+   (LABEL _2)
+   (RETURN)
+   (LABEL false_1)
+   (MOVE (TEMP x) (CONST 0))
+   (JUMP (NAME _2)))))
+

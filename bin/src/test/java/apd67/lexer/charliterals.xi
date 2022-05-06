@@ -1,0 +1,6 @@
+a:int = 'a'
+b:int = '!'
+c:int = '\n'
+d:int = '\''
+e:int = '\x005B'
+f:bool = 'not supposed to do this'

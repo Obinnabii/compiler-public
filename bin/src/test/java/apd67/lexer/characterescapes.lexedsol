@@ -1,0 +1,71 @@
+2:1 id str
+2:4 :
+2:5 int
+2:8 [
+2:9 ]
+2:10 [
+2:11 ]
+2:13 =
+2:15 string \\ \n \'
+3:1 id backslash
+3:10 :
+3:11 int
+3:14 [
+3:15 ]
+3:17 =
+3:19 string \\
+4:1 id alsobackslash
+4:14 :
+4:15 int
+4:18 [
+4:19 ]
+4:21 =
+4:22 string \\
+5:1 id newline
+5:8 :
+5:9 int
+5:12 [
+5:13 ]
+5:15 =
+5:17 string \n
+6:1 id alsonewline
+6:12 :
+6:13 int
+6:16 [
+6:17 ]
+6:19 =
+6:21 string \n
+7:1 id singlequote
+7:12 :
+7:13 int
+7:16 [
+7:17 ]
+7:19 =
+7:21 string \'
+8:1 id apostrophe
+8:11 :
+8:12 int
+8:15 [
+8:16 ]
+8:18 =
+8:20 string \'
+11:1 id backslash2
+11:11 :
+11:12 int
+11:16 =
+11:18 character \\
+12:1 id singlequote2
+12:13 :
+12:14 int
+12:18 =
+12:20 character \'
+13:1 id newline2
+13:9 :
+13:10 int
+13:14 =
+13:16 character \n
+14:1 id thisshouldbeaproblem
+14:21 :
+14:22 int
+14:26 =
+14:28 error:Lexing Error

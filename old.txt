@@ -1,0 +1,275 @@
+(COMPUNIT
+ Main
+ (FUNC
+  _Imain_paai
+  (SEQ
+   (MOVE (TEMP args) (TEMP _ARG0))
+   (MOVE (TEMP _lt0) (CONST 24))
+   (CALL_STMT (NAME _xi_alloc) (TEMP _lt0))
+   (MOVE (TEMP _lt1) (TEMP _RET0))
+   (MOVE (TEMP _m_lit_0) (TEMP _lt1))
+   (MOVE (TEMP _lt2) (ADD (TEMP _m_lit_0) (CONST 8)))
+   (MOVE (MEM (TEMP _lt2)) (CONST 1))
+   (MOVE (TEMP _lt3) (ADD (TEMP _m_lit_0) (CONST 16)))
+   (MOVE (MEM (TEMP _lt3)) (CONST 2))
+   (MOVE (TEMP _lt4) (TEMP _m_lit_0))
+   (MOVE (MEM (TEMP _lt4)) (CONST 2))
+   (MOVE (TEMP a) (ADD (TEMP _m_lit_0) (CONST 8)))
+   (MOVE (TEMP _lt5) (CONST 0))
+   (CALL_STMT (NAME _If_iaii) (TEMP a) (TEMP _lt5))
+   (MOVE (TEMP q) (TEMP _RET0))
+   (MOVE (TEMP _lt6) (CONST 1))
+   (CALL_STMT (NAME _If_iaii) (TEMP a) (TEMP _lt6))
+   (MOVE (TEMP u) (TEMP _RET0))
+   (MOVE (TEMP _lt7) (TEMP q))
+   (CALL_STMT (NAME _IunparseInt_aii) (TEMP _lt7))
+   (MOVE (TEMP _lt8) (TEMP _RET0))
+   (MOVE (TEMP _lt9) (TEMP _lt8))
+   (CALL_STMT (NAME _Iprintln_pai) (TEMP _lt9))
+   (MOVE (TEMP _lt10) (TEMP u))
+   (CALL_STMT (NAME _IunparseInt_aii) (TEMP _lt10))
+   (MOVE (TEMP _lt11) (TEMP _RET0))
+   (MOVE (TEMP _lt12) (TEMP _lt11))
+   (CALL_STMT (NAME _Iprintln_pai) (TEMP _lt12))
+   (RETURN)))
+ (FUNC
+  _Ig_pi
+  (SEQ
+   (MOVE (TEMP a) (TEMP _ARG0))
+   (MOVE (TEMP _lt13) (TEMP a))
+   (CALL_STMT (NAME _IunparseInt_aii) (TEMP _lt13))
+   (MOVE (TEMP _lt14) (TEMP _RET0))
+   (MOVE (TEMP _lt15) (TEMP _lt14))
+   (CALL_STMT (NAME _Iprintln_pai) (TEMP _lt15))
+   (RETURN)))
+ (FUNC
+  _If_iaii
+  (SEQ
+   (MOVE (TEMP a) (TEMP _ARG0))
+   (MOVE (TEMP i) (TEMP _ARG1))
+   (MOVE (TEMP _lt16) (CONST 64))
+   (CALL_STMT (NAME _xi_alloc) (TEMP _lt16))
+   (MOVE (TEMP _lt17) (TEMP _RET0))
+   (MOVE (TEMP _mstr_0) (TEMP _lt17))
+   (MOVE (TEMP _lt18) (TEMP _mstr_0))
+   (MOVE (MEM (TEMP _lt18)) (CONST 7))
+   (MOVE (TEMP _lt19) (ADD (TEMP _mstr_0) (CONST 8)))
+   (MOVE (MEM (TEMP _lt19)) (CONST 73))
+   (MOVE (TEMP _lt20) (ADD (TEMP _mstr_0) (CONST 16)))
+   (MOVE (MEM (TEMP _lt20)) (CONST 110))
+   (MOVE (TEMP _lt21) (ADD (TEMP _mstr_0) (CONST 24)))
+   (MOVE (MEM (TEMP _lt21)) (CONST 100))
+   (MOVE (TEMP _lt22) (ADD (TEMP _mstr_0) (CONST 32)))
+   (MOVE (MEM (TEMP _lt22)) (CONST 101))
+   (MOVE (TEMP _lt23) (ADD (TEMP _mstr_0) (CONST 40)))
+   (MOVE (MEM (TEMP _lt23)) (CONST 120))
+   (MOVE (TEMP _lt24) (ADD (TEMP _mstr_0) (CONST 48)))
+   (MOVE (MEM (TEMP _lt24)) (CONST 58))
+   (MOVE (TEMP _lt25) (ADD (TEMP _mstr_0) (CONST 56)))
+   (MOVE (MEM (TEMP _lt25)) (CONST 32))
+   (MOVE (TEMP _lt26) (ADD (TEMP _mstr_0) (CONST 8)))
+   (CALL_STMT (NAME _Iprint_pai) (TEMP _lt26))
+   (MOVE (TEMP _lt27) (TEMP i))
+   (CALL_STMT (NAME _IunparseInt_aii) (TEMP _lt27))
+   (MOVE (TEMP _lt28) (TEMP _RET0))
+   (MOVE (TEMP _lt29) (TEMP _lt28))
+   (CALL_STMT (NAME _Iprintln_pai) (TEMP _lt29))
+   (MOVE (TEMP _aaa_2) (TEMP a))
+   (MOVE (TEMP _aai_3) (TEMP i))
+   (CJUMP
+    (XOR (CONST 1) (ULT (TEMP _aai_3) (MEM (SUB (TEMP _aaa_2) (CONST 8)))))
+    err_7)
+   (LABEL true_6)
+   (MOVE (TEMP _lt34) (ADD (TEMP _aaa_2) (MUL (TEMP _aai_3) (CONST 8))))
+   (MOVE (TEMP _aaa_0) (TEMP a))
+   (MOVE (TEMP _aai_1) (TEMP i))
+   (CJUMP (ULT (TEMP _aai_1) (MEM (SUB (TEMP _aaa_0) (CONST 8)))) true_0)
+   (JUMP (NAME err_1))
+   (LABEL err_7)
+   (MOVE (TEMP _lt30) (CONST 0))
+   (CALL_STMT (NAME _xi_out_of_bounds) (TEMP _lt30))
+   (MOVE (TEMP _lt31) (TEMP _RET0))
+   (JUMP (NAME true_6))
+   (LABEL true_0)
+   (MOVE (MEM (TEMP _lt34))
+    (ADD (MEM (ADD (TEMP _aaa_0) (MUL (TEMP _aai_1) (CONST 8)))) (CONST 1)))
+   (MOVE (TEMP _lt35) (CONST 64))
+   (CALL_STMT (NAME _xi_alloc) (TEMP _lt35))
+   (MOVE (TEMP _lt36) (TEMP _RET0))
+   (MOVE (TEMP _mstr_1) (TEMP _lt36))
+   (MOVE (TEMP _lt37) (TEMP _mstr_1))
+   (MOVE (MEM (TEMP _lt37)) (CONST 7))
+   (MOVE (TEMP _lt38) (ADD (TEMP _mstr_1) (CONST 8)))
+   (MOVE (MEM (TEMP _lt38)) (CONST 86))
+   (MOVE (TEMP _lt39) (ADD (TEMP _mstr_1) (CONST 16)))
+   (MOVE (MEM (TEMP _lt39)) (CONST 97))
+   (MOVE (TEMP _lt40) (ADD (TEMP _mstr_1) (CONST 24)))
+   (MOVE (MEM (TEMP _lt40)) (CONST 108))
+   (MOVE (TEMP _lt41) (ADD (TEMP _mstr_1) (CONST 32)))
+   (MOVE (MEM (TEMP _lt41)) (CONST 117))
+   (MOVE (TEMP _lt42) (ADD (TEMP _mstr_1) (CONST 40)))
+   (MOVE (MEM (TEMP _lt42)) (CONST 101))
+   (MOVE (TEMP _lt43) (ADD (TEMP _mstr_1) (CONST 48)))
+   (MOVE (MEM (TEMP _lt43)) (CONST 58))
+   (MOVE (TEMP _lt44) (ADD (TEMP _mstr_1) (CONST 56)))
+   (MOVE (MEM (TEMP _lt44)) (CONST 32))
+   (MOVE (TEMP _lt45) (ADD (TEMP _mstr_1) (CONST 8)))
+   (CALL_STMT (NAME _Iprint_pai) (TEMP _lt45))
+   (MOVE (TEMP _aaa_4) (TEMP a))
+   (MOVE (TEMP _aai_5) (TEMP i))
+   (CJUMP (ULT (TEMP _aai_5) (MEM (SUB (TEMP _aaa_4) (CONST 8)))) true_8)
+   (JUMP (NAME err_9))
+   (LABEL err_1)
+   (MOVE (TEMP _lt32) (CONST 0))
+   (CALL_STMT (NAME _xi_out_of_bounds) (TEMP _lt32))
+   (MOVE (TEMP _lt33) (TEMP _RET0))
+   (JUMP (NAME true_0))
+   (LABEL true_8)
+   (MOVE (TEMP _lt48) (MEM (ADD (TEMP _aaa_4) (MUL (TEMP _aai_5) (CONST 8)))))
+   (CALL_STMT (NAME _IunparseInt_aii) (TEMP _lt48))
+   (MOVE (TEMP _lt49) (TEMP _RET0))
+   (MOVE (TEMP _lt50) (TEMP _lt49))
+   (CALL_STMT (NAME _Iprintln_pai) (TEMP _lt50))
+   (MOVE (TEMP _aaa_6) (TEMP a))
+   (MOVE (TEMP _aai_7) (TEMP i))
+   (CJUMP (ULT (TEMP _aai_7) (MEM (SUB (TEMP _aaa_6) (CONST 8)))) true_12)
+   (JUMP (NAME err_13))
+   (LABEL err_9)
+   (MOVE (TEMP _lt46) (CONST 0))
+   (CALL_STMT (NAME _xi_out_of_bounds) (TEMP _lt46))
+   (MOVE (TEMP _lt47) (TEMP _RET0))
+   (JUMP (NAME true_8))
+   (LABEL true_12)
+   (MOVE (TEMP _lt53) (MEM (ADD (TEMP _aaa_6) (MUL (TEMP _aai_7) (CONST 8)))))
+   (RETURN (TEMP _lt53))
+   (LABEL err_13)
+   (MOVE (TEMP _lt51) (CONST 0))
+   (CALL_STMT (NAME _xi_out_of_bounds) (TEMP _lt51))
+   (MOVE (TEMP _lt52) (TEMP _RET0))
+   (JUMP (NAME true_12)))))
+
+
+
+(COMPUNIT
+ Main
+ (FUNC
+  _Imain_paai
+  (SEQ
+   (MOVE (TEMP args) (TEMP _ARG0))
+   (SEQ
+    (SEQ
+     (SEQ
+      (MOVE
+       (TEMP a)
+       (ESEQ
+        (SEQ
+         (MOVE (TEMP _m_lit_0)
+          (CALL (NAME _xi_alloc) (ADD (MUL (CONST 2) (CONST 8)) (CONST 8))))
+         (MOVE (MEM (ADD (TEMP _m_lit_0) (CONST 8))) (CONST 1))
+         (MOVE (MEM (ADD (TEMP _m_lit_0) (CONST 16))) (CONST 2))
+         (MOVE (MEM (TEMP _m_lit_0)) (CONST 2)))
+        (ADD (TEMP _m_lit_0) (CONST 8)))))
+     (SEQ
+      (CALL_STMT (NAME _If_iaii) (TEMP a) (CONST 0))
+      (MOVE (TEMP q) (TEMP _RET0)))
+     (SEQ
+      (CALL_STMT (NAME _If_iaii) (TEMP a) (CONST 1))
+      (MOVE (TEMP u) (TEMP _RET0)))
+     (CALL_STMT (NAME _Iprintln_pai) (CALL (NAME _IunparseInt_aii) (TEMP q)))
+     (CALL_STMT (NAME _Iprintln_pai) (CALL (NAME _IunparseInt_aii) (TEMP u))))
+    (RETURN))))
+ (FUNC
+  _Ig_pi
+  (SEQ
+   (MOVE (TEMP a) (TEMP _ARG0))
+   (SEQ
+    (SEQ
+     (CALL_STMT (NAME _Iprintln_pai) (CALL (NAME _IunparseInt_aii) (TEMP a))))
+    (RETURN))))
+ (FUNC
+  _If_iaii
+  (SEQ
+   (MOVE (TEMP a) (TEMP _ARG0))
+   (MOVE (TEMP i) (TEMP _ARG1))
+   (SEQ
+    (CALL_STMT
+     (NAME _Iprint_pai)
+     (ESEQ
+      (SEQ
+       (MOVE (TEMP _mstr_0)
+        (CALL (NAME _xi_alloc) (ADD (MUL (CONST 7) (CONST 8)) (CONST 8))))
+       (MOVE (MEM (TEMP _mstr_0)) (CONST 7))
+       (MOVE (MEM (ADD (TEMP _mstr_0) (CONST 8))) (CONST 73))
+       (MOVE (MEM (ADD (TEMP _mstr_0) (CONST 16))) (CONST 110))
+       (MOVE (MEM (ADD (TEMP _mstr_0) (CONST 24))) (CONST 100))
+       (MOVE (MEM (ADD (TEMP _mstr_0) (CONST 32))) (CONST 101))
+       (MOVE (MEM (ADD (TEMP _mstr_0) (CONST 40))) (CONST 120))
+       (MOVE (MEM (ADD (TEMP _mstr_0) (CONST 48))) (CONST 58))
+       (MOVE (MEM (ADD (TEMP _mstr_0) (CONST 56))) (CONST 32)))
+      (ADD (TEMP _mstr_0) (CONST 8))))
+    (CALL_STMT (NAME _Iprintln_pai) (CALL (NAME _IunparseInt_aii) (TEMP i)))
+    (SEQ
+     (MOVE
+      (MEM
+       (ESEQ
+        (SEQ
+         (MOVE (TEMP _aaa_2) (TEMP a))
+         (MOVE (TEMP _aai_3) (TEMP i))
+         (CJUMP (ULT (TEMP _aai_3) (MEM (SUB (TEMP _aaa_2) (CONST 8)))) true_6
+          err_7)
+         (LABEL err_7)
+         (EXP (CALL (NAME _xi_out_of_bounds) (CONST 0)))
+         (LABEL true_6))
+        (ADD (TEMP _aaa_2) (MUL (TEMP _aai_3) (CONST 8)))))
+      (ADD
+       (ESEQ
+        (SEQ
+         (MOVE (TEMP _aaa_0) (TEMP a))
+         (MOVE (TEMP _aai_1) (TEMP i))
+         (CJUMP (ULT (TEMP _aai_1) (MEM (SUB (TEMP _aaa_0) (CONST 8)))) true_0
+          err_1)
+         (LABEL err_1)
+         (EXP (CALL (NAME _xi_out_of_bounds) (CONST 0)))
+         (LABEL true_0))
+        (MEM (ADD (TEMP _aaa_0) (MUL (TEMP _aai_1) (CONST 8)))))
+       (CONST 1))))
+    (CALL_STMT
+     (NAME _Iprint_pai)
+     (ESEQ
+      (SEQ
+       (MOVE (TEMP _mstr_1)
+        (CALL (NAME _xi_alloc) (ADD (MUL (CONST 7) (CONST 8)) (CONST 8))))
+       (MOVE (MEM (TEMP _mstr_1)) (CONST 7))
+       (MOVE (MEM (ADD (TEMP _mstr_1) (CONST 8))) (CONST 86))
+       (MOVE (MEM (ADD (TEMP _mstr_1) (CONST 16))) (CONST 97))
+       (MOVE (MEM (ADD (TEMP _mstr_1) (CONST 24))) (CONST 108))
+       (MOVE (MEM (ADD (TEMP _mstr_1) (CONST 32))) (CONST 117))
+       (MOVE (MEM (ADD (TEMP _mstr_1) (CONST 40))) (CONST 101))
+       (MOVE (MEM (ADD (TEMP _mstr_1) (CONST 48))) (CONST 58))
+       (MOVE (MEM (ADD (TEMP _mstr_1) (CONST 56))) (CONST 32)))
+      (ADD (TEMP _mstr_1) (CONST 8))))
+    (CALL_STMT
+     (NAME _Iprintln_pai)
+     (CALL
+      (NAME _IunparseInt_aii)
+      (ESEQ
+       (SEQ
+        (MOVE (TEMP _aaa_4) (TEMP a))
+        (MOVE (TEMP _aai_5) (TEMP i))
+        (CJUMP (ULT (TEMP _aai_5) (MEM (SUB (TEMP _aaa_4) (CONST 8)))) true_8
+         err_9)
+        (LABEL err_9)
+        (EXP (CALL (NAME _xi_out_of_bounds) (CONST 0)))
+        (LABEL true_8))
+       (MEM (ADD (TEMP _aaa_4) (MUL (TEMP _aai_5) (CONST 8)))))))
+    (RETURN
+     (ESEQ
+      (SEQ
+       (MOVE (TEMP _aaa_6) (TEMP a))
+       (MOVE (TEMP _aai_7) (TEMP i))
+       (CJUMP (ULT (TEMP _aai_7) (MEM (SUB (TEMP _aaa_6) (CONST 8)))) true_12
+        err_13)
+       (LABEL err_13)
+       (EXP (CALL (NAME _xi_out_of_bounds) (CONST 0)))
+       (LABEL true_12))
+      (MEM (ADD (TEMP _aaa_6) (MUL (TEMP _aai_7) (CONST 8))))))))))

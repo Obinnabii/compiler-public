@@ -1,0 +1,309 @@
+package apd67.parser;
+
+import java.util.LinkedList;
+import apd67.ast.*;
+import apd67.lexer.Token;
+import apd67.util.exception.*;
+
+import java_cup.runtime.Symbol;
+
+
+parser code {:
+
+public void syntax_error(Symbol cur_token){
+      return;
+}
+
+public void unrecovered_syntax_error(Symbol cur_token) throws ParserException {
+      Token token = (Token) cur_token;
+      String message = "Unexpected token " + token.getAttribute();
+
+      report_fatal_error(message, token);
+
+}
+
+public void report_fatal_error(String message, Token token) throws ParserException {
+      done_parsing();
+      throw new ParserException(message, token);
+}
+
+:};
+
+
+// You might want to add types (AST Nodes) to these declarations.
+// Terminals
+terminal IF, ELSE,
+  INT_TYPE, BOOL_TYPE,
+  TRUE, FALSE, NOT,
+  LPAREN, RPAREN,
+  LBRACE, RBRACE,
+  LBRACK, RBRACK,
+  COLON, SEMICOLON, COMMA,
+  PLUS, MINUS, TIMES, DIV, MOD,
+  LT, LTE, GT,
+  GEQ, EQ, NEQ,
+  AND, OR,
+  ASSIGN,
+  WHILE,
+  RETURN,
+  LENGTH,
+  HTIMES,
+  USE,
+  NEGATIVE,
+  INDEX,
+  USCORE,
+  FUNC_CALL,
+  BLOCK,
+  IXI,
+  FUNC_DEF;
+
+terminal Long        INT, MIN_INT;
+terminal String      ID, STRING, CHAR;
+
+// Nonterminals
+non terminal Interface               interface;
+non terminal Node                    parse_tree;
+non terminal MethodDef               method_def;
+non terminal LinkedList<Use>         use_list;
+non terminal LinkedList<Expr>        arg, procedure_args, indices_full, indices_empty, indices;
+non terminal LinkedList<Declaration> param, method_params;
+non terminal Type                    type, decl_type, assign_type;
+non terminal LinkedList<Type>        assign_type_list, method_types;
+non terminal Use                     use;
+non terminal Program                 program;
+non terminal Declaration             declaration;
+non terminal LinkedList<Variable>    declarations;
+non terminal Stmt                    stmt;
+non terminal LinkedList<Stmt>        stmts;
+non terminal Return                  return;
+non terminal Expr                    expr, index, emptyindex;
+non terminal Binary                  binop_expr;
+non terminal Unop                    unop_expr;
+non terminal Assignment              assignment;
+non terminal If                      if;
+non terminal While                   while;
+non terminal Block                   block;
+non terminal Literal                 literal;
+non terminal Variable                variable;
+non terminal Identifier              id;
+
+// Precedence
+precedence left      OR;
+precedence left      AND;
+precedence left      EQ, NEQ;
+precedence left      LT, GT, LTE, GEQ;
+precedence left      PLUS, MINUS;
+precedence left      TIMES, HTIMES, DIV, MOD;
+precedence nonassoc  NOT, NEGATIVE;
+precedence left      LBRACK;
+precedence nonassoc  INDEX;
+
+
+
+precedence nonassoc  IF;
+precedence nonassoc  ELSE;
+
+precedence left FUNC_CALL, BLOCK;
+precedence left FUNC_DEF;
+
+
+start with parse_tree;
+
+// Grammar
+parse_tree ::= program:p                         {: RESULT = p; :}
+             | IXI interface:i                   {: RESULT = i; :}
+             ;
+
+interface ::= id:id method_params:params method_types:ts                   {: RESULT = new Interface(id, params, ts); :}
+            | id:id method_params:params                                   {: RESULT = new Interface(id, params, new LinkedList<Type>()); :}
+            | interface:i id:id method_params:params method_types:ts       {: i.appendMethodDeclaration(new MethodDeclaration(id, params, ts)); RESULT = i; :}
+            | interface:i id:id method_params:params                       {: i.appendMethodDeclaration(new MethodDeclaration(id, params, new LinkedList<Type>())); RESULT = i; :}
+            ;
+
+program ::= method_def:md                               {: RESULT = new Program(md); :} %prec FUNC_DEF
+          | use_list:u method_def:md                    {: RESULT = new Program(u, md); :} %prec FUNC_DEF
+          | program:p method_def:md                     {: p.appendMethod(md); RESULT = p; :} %prec FUNC_CALL
+          ;
+
+use ::= USE:u id:id                                {: RESULT = (Use) new Use(id).setLine(uright).setColumn(uleft); :}
+      | USE:u id:id SEMICOLON                      {: RESULT = (Use) new Use(id).setLine(uright).setColumn(uleft); :}
+        ;
+
+use_list ::= use:u                               {: LinkedList<Use> lst = new LinkedList<Use>(); lst.add(u); RESULT = lst; :}
+           | use_list:us use:u                   {: us.add(u); RESULT = us; :}
+           ;
+
+stmt ::= assignment:a                                   {: RESULT = a; :}
+       | block:b                                        {: RESULT = b; :} %prec BLOCK 
+       | declaration:d                                  {: RESULT = d; :}
+       | if:i                                           {: RESULT = i; :}
+       | while:w                                        {: RESULT = w; :}
+       | id:id procedure_args:args                      {: RESULT = new ProcedureCall(id, args); :} %prec FUNC_CALL
+       ;
+
+stmts ::= stmt:s SEMICOLON stmts:lst                    {: lst.addFirst(s); RESULT = lst; :}
+        | stmt:s stmts:lst                              {: lst.addFirst(s); RESULT =  lst; :}
+        | stmt:s                                        {: LinkedList<Stmt> lst = new LinkedList<Stmt>(); lst.add(s); RESULT = lst; :} 
+        | stmt:s SEMICOLON                              {: LinkedList<Stmt> lst = new LinkedList<Stmt>(); lst.add(s); RESULT = lst; :}
+        ; 
+
+
+// Functions
+method_def ::= id:id method_params:param method_types:type block:block
+                                        {: RESULT = new MethodDef(id, param, type, block); :}
+               | id:id method_params:param block:block
+                                        {: RESULT = new MethodDef(id, param, new LinkedList<Type>(), block); :}  %prec FUNC_DEF
+               ;
+
+procedure_args ::= LPAREN arg:arg RPAREN                {: RESULT = arg; :}
+                 | LPAREN RPAREN                        {: RESULT = new LinkedList<Expr>();  :}%prec FUNC_DEF
+                 ;
+
+method_params ::= LPAREN param:param RPAREN             {: RESULT = param; :}
+                | LPAREN RPAREN                         {: RESULT = new LinkedList<Declaration>(); :}%prec FUNC_CALL
+                ;
+
+
+return ::= RETURN:r                                     {: RESULT = (Return) new Return().setLine(rright).setColumn(rleft); :}
+         | RETURN:r arg:arg                             {: RESULT = (Return) new Return(arg).setLine(rright).setColumn(rleft); :}
+         | RETURN:r SEMICOLON                           {: RESULT = (Return) new Return().setLine(rright).setColumn(rleft); :}
+         | RETURN:r arg:arg SEMICOLON                   {: RESULT = (Return) new Return(arg).setLine(rright).setColumn(rleft); :}
+         ;
+
+param ::= id:id COLON assign_type:t                     {: LinkedList<Declaration> lst = new LinkedList<Declaration>(); lst.add(new Declaration(id, t)); RESULT = lst; :}
+        | id:id COLON assign_type:t COMMA param:p       {: p.addFirst(new Declaration(id, t)); RESULT = p; :}
+        ;
+
+arg ::= expr:e                                          {: LinkedList<Expr> lst = new LinkedList<Expr>(); lst.add(e); RESULT = lst; :}
+      | expr:e COMMA arg:lst                            {: lst.addFirst(e); RESULT = lst; :}
+      | expr:e COMMA                                    {: LinkedList<Expr> lst = new LinkedList<Expr>(); lst.add(e); RESULT = lst; :}
+      ;
+
+
+// Types
+method_types ::= COLON assign_type_list:a                      {: RESULT = a; :};
+
+assign_type_list ::= assign_type:a                             {: LinkedList<Type> lst = new LinkedList<Type>(); lst.add(a); RESULT = lst; :}
+                   | assign_type:a COMMA assign_type_list:lst  {: lst.addFirst(a); RESULT = lst; :}
+                   ;
+
+type ::= INT_TYPE:t                                {: RESULT = (Type) new IntType().setLine(tright).setColumn(tleft); :}
+       | BOOL_TYPE:t                               {: RESULT = (Type) new BoolType().setLine(tright).setColumn(tleft); :}
+       ;
+
+assign_type ::= type:t                           {: RESULT = t; :}
+              | assign_type:t LBRACK RBRACK      {: RESULT = new ArrayType(t, null); :}
+              ;
+
+decl_type ::= type:t                             {: RESULT = t; :}
+            | type:t indices:i                   {: RESULT = ArrayType.fromList(t, i); :}
+            ;
+
+emptyindex ::= LBRACK RBRACK                     {: RESULT = null; :};
+
+indices_empty ::= emptyindex                      {: LinkedList<Expr> lst = new LinkedList<Expr>(); lst.add(null); RESULT = lst;:}
+                | LBRACK RBRACK indices_empty:lst {: lst.add(null); RESULT = lst; :}
+                ;
+
+index  ::= LBRACK expr:e RBRACK                  {: RESULT = e; :};
+
+indices_full ::= index:i                               {: LinkedList<Expr> lst = new LinkedList<Expr>(); lst.add(i); RESULT = lst; :}
+               |  LBRACK expr:e RBRACK indices:lst     {: lst.add(e); RESULT = lst; :}
+               ;
+
+indices ::= indices_empty:lst                     {: RESULT = lst; :}
+          | indices_full:lst                      {: RESULT = lst; :}
+          | indices_full:lst1 indices_empty:lst2  {: for(Expr e: lst2) lst1.add(null); RESULT = lst1; :}
+          ;
+
+// Loops and ifs
+while ::= WHILE:w expr:e stmt:s                   {: RESULT = (While) new While(e, s).setLine(wright).setColumn(wleft); :}
+        ;
+
+if ::= IF:i expr:e stmt:s1                        {: RESULT = (If) new If(e, s1, null).setLine(iright).setColumn(ileft); :}
+     | IF:i expr:e stmt:s1 ELSE stmt:s2           {: RESULT = (If) new If(e, s1, s2).setLine(iright).setColumn(ileft); :}
+     ;
+
+// General expressions, blocks, and assignments
+block ::= LBRACE:lb stmts:s RBRACE                  {: RESULT = (Block) new Block(s).setLine(lbright).setColumn(lbleft); :}
+        | LBRACE:lb stmts:s return:r RBRACE         {: s.add(r); RESULT = (Block) new Block(s).setLine(lbright).setColumn(lbleft); :}
+        | LBRACE:lb return:r RBRACE                 {: LinkedList<Stmt> lst = new LinkedList<Stmt>(); lst.add(r); RESULT = (Block) new Block(lst).setLine(lbright).setColumn(lbleft); :}
+        | LBRACE:lb RBRACE                          {: RESULT = (Block) new Block(new LinkedList<Stmt>()).setLine(lbright).setColumn(lbleft); :}
+        ;
+
+expr ::= unop_expr:e                                    {: RESULT = e; :}
+       | binop_expr:e                                   {: RESULT = e; :}
+       | LPAREN expr:e RPAREN                           {: RESULT = e; :}
+       | id:id LPAREN arg:arg RPAREN                    {: RESULT = new MethodCall(id, arg); :}
+       | id:id LPAREN RPAREN                            {: RESULT = new MethodCall(id, new LinkedList<Expr>()); :}
+       | LENGTH:l LPAREN expr:e RPAREN                    {: LinkedList<Expr> lst = new LinkedList<Expr>(); lst.add(e);
+                                                           Identifier len = (Identifier) new Identifier("length").setLine(lright).setColumn(lleft);
+                                                           RESULT = new MethodCall(len, lst); :}
+       | MINUS:u MIN_INT:n                                {: RESULT = (Unop) new Negative((Int) new Int(n).setLine(nright).setColumn(nleft)).setLine(uright).setColumn(uleft);; :}
+       | literal:l                                      {: RESULT = l; :}
+       ;
+
+unop_expr ::= MINUS:u expr:e1                    {: RESULT = (Unop) new Negative(e1).setLine(uright).setColumn(uleft); :} %prec NEGATIVE
+            | NOT:u expr:e1                      {: RESULT = (Unop) new Not(e1).setLine(uright).setColumn(uleft); :};
+
+binop_expr ::= expr:e1 PLUS expr:e2              {: RESULT = new Plus(e1, e2); :}
+             | expr:e1 MINUS expr:e2             {: RESULT = new Minus(e1, e2); :}
+             | expr:e1 TIMES expr:e2             {: RESULT = new Times(e1, e2); :}
+             | expr:e1 HTIMES expr:e2            {: RESULT = new HighTimes(e1, e2); :}
+             | expr:e1 DIV expr:e2               {: RESULT = new Div(e1, e2); :}
+             | expr:e1 MOD expr:e2               {: RESULT = new Mod(e1, e2); :}
+             | expr:e1 LT expr:e2                {: RESULT = new LessThan(e1, e2); :}
+             | expr:e1 LTE expr:e2               {: RESULT = new LessThanEqual(e1, e2); :}
+             | expr:e1 GT expr:e2                {: RESULT = new GreaterThan(e1, e2); :}
+             | expr:e1 GEQ expr:e2               {: RESULT = new GreaterThanEqual(e1, e2); :}
+             | expr:e1 EQ expr:e2                {: RESULT = new Equal(e1, e2); :}
+             | expr:e1 NEQ expr:e2               {: RESULT = new NotEqual(e1, e2); :}
+             | expr:e1 AND expr:e2               {: RESULT = new And(e1, e2); :}
+             | expr:e1 OR expr:e2                {: RESULT = new Or(e1, e2); :}
+             | expr:e1 LBRACK expr:e2 RBRACK     {: RESULT = new ArrayAccess(e1, e2); :} %prec INDEX
+             ;
+
+// DECLARATION AND ASSIGNMENT
+declaration ::= id:id COLON decl_type:t          {: RESULT = new Declaration(id, t); :}
+                ;
+
+declarations ::= declarations:ds COMMA
+                  id:id COLON type:t                  {: ds.add(new Declaration(id, t) ); RESULT = ds; :}
+              | declarations:ds COMMA 
+                  id:id COLON type:t indices_empty:i  {: ds.add(new Declaration(id, ArrayType.fromList(t,i))); RESULT = ds; :}
+              | declarations:ds COMMA 
+                  id:id indices_full:lst              {: ds.add(ArrayAccess.fromList(id, lst)); RESULT = ds; :}
+              | declarations:ds COMMA USCORE:u        {: ds.add((Variable) new UscoreDecl().setLine(uright).setColumn(uleft)); RESULT = ds; :}
+              | USCORE:u                              {: LinkedList<Variable> lst = new LinkedList<Variable>(); lst.add((Variable) new UscoreDecl().setLine(uright).setColumn(uleft)); RESULT = lst; :}
+              | id:id COLON type:t indices_empty:i    {: LinkedList<Variable> lst = new LinkedList<Variable>(); lst.add(new Declaration(id, ArrayType.fromList(t,i))); RESULT = lst; :}
+              | id:id COLON type:t                    {: LinkedList<Variable> lst = new LinkedList<Variable>(); lst.add(new Declaration(id, t)); RESULT = lst; :}
+              ;
+
+
+assignment ::= variable:v ASSIGN expr:e          {: LinkedList<Variable> lst = new LinkedList<Variable>(); lst.add(v); RESULT = new Assignment(lst, e); :}
+             | declarations:ds ASSIGN expr:e      {: RESULT = new Assignment(ds, e); :}
+             ;
+
+variable ::= id:id                               {: RESULT = id; :}
+           | variable:v LBRACK expr:e RBRACK     {: RESULT = new ArrayAccess(v, e); :}
+           | id:id LPAREN arg:arg RPAREN  
+             LBRACK expr:e RBRACK                {: RESULT = new ArrayAccess(new MethodCall(id, arg), e); :}
+           | id:id LPAREN RPAREN  
+             LBRACK expr:e RBRACK                {: RESULT = new ArrayAccess(new MethodCall(id, new LinkedList<Expr>()), e); :}
+           ;
+
+
+literal  ::= TRUE:b                              {: RESULT = (Bool) new Bool(true).setLine(bright).setColumn(bleft); :}
+           | FALSE:b                             {: RESULT = (Bool) new Bool(false).setLine(bright).setColumn(bleft); :}
+           | INT:n                               {: RESULT = (Int) new Int(n).setLine(nright).setColumn(nleft); :}
+           | STRING:s                            {: RESULT = (StringLit) new StringLit(s).setLine(sright).setColumn(sleft); :}
+           | CHAR:c                              {: RESULT = (Char) new Char(c).setLine(cright).setColumn(cleft); :}
+           | id:id                               {: RESULT = id; :}
+           | LBRACE:lb arg:arg RBRACE            {: RESULT = (ArrayLit) new ArrayLit(arg).setLine(lbright).setColumn(lbleft); :}
+           | LBRACE:lb RBRACE                    {: RESULT = (ArrayLit) new ArrayLit(new LinkedList<Expr>()).setLine(lbright).setColumn(lbleft); :}
+           | LBRACE:lb COMMA RBRACE              {: RESULT = (ArrayLit) new ArrayLit(new LinkedList<Expr>()).setLine(lbright).setColumn(lbleft); :}
+           ; // maybe add arrays
+
+id       ::= ID:id                               {: RESULT = (Identifier) new Identifier(id).setLine(idright).setColumn(idleft); :}
+           ;
+

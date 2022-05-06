@@ -1,0 +1,104 @@
+(COMPUNIT
+ Main
+ (FUNC
+  _Iusage_p
+  (SEQ
+   (CALL_STMT
+    (NAME _Iprintln_pai)
+    (ESEQ
+     (SEQ
+      (MOVE (TEMP _m)
+       (CALL (NAME _xi_alloc) (ADD (MUL (CONST 29) (CONST 8)) (CONST 8))))
+      (MOVE (MEM (TEMP _m)) (CONST 29))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 8))) (CONST 80))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 16))) (CONST 108))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 24))) (CONST 101))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 32))) (CONST 97))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 40))) (CONST 115))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 48))) (CONST 101))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 56))) (CONST 32))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 64))) (CONST 115))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 72))) (CONST 112))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 80))) (CONST 101))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 88))) (CONST 99))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 96))) (CONST 105))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 104))) (CONST 102))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 112))) (CONST 121))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 120))) (CONST 32))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 128))) (CONST 116))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 136))) (CONST 104))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 144))) (CONST 101))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 152))) (CONST 32))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 160))) (CONST 105))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 168))) (CONST 110))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 176))) (CONST 112))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 184))) (CONST 117))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 192))) (CONST 116))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 200))) (CONST 32))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 208))) (CONST 115))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 216))) (CONST 105))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 224))) (CONST 122))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 232))) (CONST 101)))
+     (ADD (TEMP _m) (CONST 8))))))
+ (FUNC
+  _Imain_paai
+  (SEQ
+   (SEQ (MOVE (TEMP n) (CONST 11)))
+   (SEQ (MOVE (TEMP r) (TEMP _RET0)))
+   (CALL_STMT
+    (NAME _Iprint_pai)
+    (ESEQ
+     (SEQ
+      (MOVE (TEMP _m)
+       (CALL (NAME _xi_alloc) (ADD (MUL (CONST 6) (CONST 8)) (CONST 8))))
+      (MOVE (MEM (TEMP _m)) (CONST 6))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 8))) (CONST 65))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 16))) (CONST 99))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 24))) (CONST 107))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 32))) (CONST 40))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 40))) (CONST 50))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 48))) (CONST 44)))
+     (ADD (TEMP _m) (CONST 8))))
+   (CALL_STMT (NAME _Iprint_pai) (CALL (NAME _IunparseInt_aii) (TEMP n)))
+   (CALL_STMT
+    (NAME _Iprint_pai)
+    (ESEQ
+     (SEQ
+      (MOVE (TEMP _m)
+       (CALL (NAME _xi_alloc) (ADD (MUL (CONST 3) (CONST 8)) (CONST 8))))
+      (MOVE (MEM (TEMP _m)) (CONST 3))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 8))) (CONST 41))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 16))) (CONST 58))
+      (MOVE (MEM (ADD (TEMP _m) (CONST 24))) (CONST 32)))
+     (ADD (TEMP _m) (CONST 8))))
+   (CALL_STMT (NAME _Iprint_pai) (CALL (NAME _IunparseInt_aii) (TEMP r)))
+   (CALL_STMT
+    (NAME _Iprintln_pai)
+    (ESEQ
+     (SEQ
+      (MOVE (TEMP _m)
+       (CALL (NAME _xi_alloc) (ADD (MUL (CONST 0) (CONST 8)) (CONST 8))))
+      (MOVE (MEM (TEMP _m)) (CONST 0)))
+     (ADD (TEMP _m) (CONST 8))))))
+ (FUNC
+  _IAck_iii
+  (SEQ
+   (SEQ
+    (CJUMP (EQ (TEMP m) (CONST 0)) true_4 false_5)
+    (LABEL true_4)
+    (SEQ (RETURN (ADD (TEMP n) (CONST 1))))
+    (JUMP (NAME _6))
+    (LABEL false_5)
+    (SEQ
+     (CJUMP (EQ (TEMP n) (CONST 0)) true_0 false_1)
+     (LABEL true_0)
+     (SEQ (RETURN (CALL (NAME _IAck_iii) (SUB (TEMP m) (CONST 1)) (CONST 1))))
+     (JUMP (NAME _2))
+     (LABEL false_1)
+     (SEQ
+      (RETURN
+       (CALL (NAME _IAck_iii) (SUB (TEMP m) (CONST 1))
+        (CALL (NAME _IAck_iii) (TEMP m) (SUB (TEMP n) (CONST 1))))))
+     (LABEL _2))
+    (LABEL _6)))))
+

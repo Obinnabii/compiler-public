@@ -1,0 +1,3521 @@
+commit d288a346186481ef473f28b1ed9cbcf9cbb469d6
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri May 21 08:47:48 2021 -0400
+
+    done
+
+commit ac8e538aa4f2ecb297d2e8bdace9ab386b9d6e23
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri May 21 08:34:39 2021 -0400
+
+    cse
+
+commit 7a777acfec6a2c4dd8aac39fbcc28ac42380a5ca
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri May 21 08:34:23 2021 -0400
+
+    Somewhat working let's goooooo
+    
+    reg-alloc RIP C'est la vie
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit d92010cb8d036603532f1e49cc8afaf168406fc3
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu May 20 20:55:27 2021 -0400
+
+    DCE && Framework for CSE
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit d9983203beff3d89e03a7ef213095f8f4020b1ff
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu May 20 00:16:40 2021 -0400
+
+    T-minus 2 days
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 6c54f1ab5ba7e3e38a9a1cc5ca7b865c62348fb1
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed May 19 00:10:18 2021 -0400
+
+    Available Expressions :BopIt:
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit dfb9f0ec77b19b539a41acaeb2413f7f23c954b6
+Merge: 1a020e7 8d8325e
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue May 18 20:18:23 2021 -0400
+
+    Merge pull request #106 from the-compiler-wizards/dot
+    
+    Dot
+
+commit 8d8325ee548ceab51febd2259015616c2875c75f
+Merge: 9b6c349 1a020e7
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue May 18 20:18:14 2021 -0400
+
+    Merge branch 'master' into dot
+
+commit 1a020e7b2569bc13e0c7320d7aa7687f0614f4b6
+Merge: 900287a 870d9cc
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue May 18 20:16:22 2021 -0400
+
+    Merge pull request #107 from the-compiler-wizards/DFA-1
+    
+    Dfa 1
+
+commit 9b6c349a21195ea314844a41635cfd75f7397083
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue May 18 16:48:35 2021 -0400
+
+    fix issue with iff adding pointles labels and jumps
+
+commit 870d9cc762af0f6b48bccdd0bfef673cfd754a20
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue May 18 01:00:36 2021 -0400
+
+    Live Var is prob broken but proof of concepts :fingersCrossed:
+
+commit 76841685bccf7fabec2d36f9f469db3afec75008
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue May 18 01:00:05 2021 -0400
+
+    DFA might be working :Smile:
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 442f274cda2216dc70aff705becd126dfcca675f
+Author: vagrant <vagrant@cs4120>
+Date:   Tue May 18 03:09:43 2021 +0000
+
+    updated some CLI stuff, help description
+
+commit 8e75cfca3b66f1e6c7d38552c689bfca597244fa
+Author: vagrant <vagrant@cs4120>
+Date:   Mon May 17 23:56:34 2021 +0000
+
+    add CLI option strings for the dot formatting generation
+
+commit 5bb9b7a80c1196a63a25559de6e6c3f4dbbedc44
+Author: vagrant <vagrant@cs4120>
+Date:   Mon May 17 19:39:20 2021 +0000
+
+    Basic implementation for converting CFGs to dot syntax structured text; TODO: support for writing to file before and after optimizations via CLI
+
+commit 46359aedf723070512a0398b4e40545aead0e669
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon May 17 01:28:32 2021 -0400
+
+    Infrastructure
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit e566102523ff24141f9a7bfa8626958a18f5ea01
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun May 16 15:05:28 2021 -0400
+
+    improve debug comments
+
+commit 900287a0a21eaaa08a71928f582b4c660da295b7
+Merge: 6dd4f35 35c8753
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Sun May 16 15:05:00 2021 -0400
+
+    Merge pull request #96 from the-compiler-wizards/pa5bug
+    
+    Pa5bug
+
+commit 35c87535cddbff5cf23aa93847e131db65100d0e
+Merge: e5ae2fd 2f32f06
+Author: apd67 <apd67@cornell.edu>
+Date:   Tue May 11 21:59:50 2021 -0400
+
+    Merge branch 'pa5bug' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into pa5bug
+
+commit e5ae2fd9852d974af80b3e0b3768e010d4d3a6ff
+Author: apd67 <apd67@cornell.edu>
+Date:   Tue May 11 21:59:33 2021 -0400
+
+    bug fix
+
+commit 2f32f06299a470459562222ea05d2de401590a41
+Merge: dd900f4 dd20743
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue May 11 11:29:56 2021 -0400
+
+    Merge branch 'pa5bug' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into pa5bug
+
+commit dd900f4560fd494d86f19cba2d6dd6103685ebd7
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue May 11 11:29:54 2021 -0400
+
+    chmod
+
+commit dd207437ae7bc9ed7bf898b586a1f586a8deccd9
+Author: apd67 <apd67@cornell.edu>
+Date:   Tue May 11 00:05:00 2021 -0400
+
+    We fixed it
+
+commit 19c3b1fec0e2b1edc9ea3b641a9f08abfe18b49d
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon May 10 23:58:53 2021 -0400
+
+    Recent version
+
+commit 9292e77568895c7ce7cf47dd951b2ddca05e6c74
+Merge: 189280e 207893b
+Author: vagrant <vagrant@cs4120>
+Date:   Tue May 11 00:45:20 2021 +0000
+
+    Merge branch 'pa5bug' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into pa5bug
+
+commit 189280eb955885b7e2943ad07a485fa0a3ce3620
+Author: vagrant <vagrant@cs4120>
+Date:   Tue May 11 00:45:08 2021 +0000
+
+    Current changes
+
+commit 207893bff23c91d1d5fc27b38262da9476ef522e
+Merge: 2cc6465 242b8a9
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon May 10 20:44:04 2021 -0400
+
+    Merge branch 'pa5bug' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into pa5bug
+
+commit 2cc646510ecac6f3873f2aa4563e80409018e713
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon May 10 20:44:01 2021 -0400
+
+    fix binops
+
+commit 242b8a9a20d6f354d1e7aa7d71c703dba977a563
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon May 10 20:14:46 2021 -0400
+
+    Fixed array (issue in move)
+
+commit 334d606ecbcd86b4f7588b76660dc16f9057d81a
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon May 10 13:02:38 2021 -0400
+
+    Assembly checker
+
+commit 1e4aa8006c30bd2a88b359cdaae6f0bca3d3c47c
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon May 10 13:00:34 2021 -0400
+
+    Current changes
+
+commit 3a6e4d984e7fd2cda5a8b2b06ab259ee7aea3d67
+Author: vagrant <vagrant@cs4120>
+Date:   Sun May 9 15:19:43 2021 +0000
+
+    Fixed CJUMP tile bug
+
+commit d7dfc33929fcb0f95b77b2227ee69c6d9603d4f5
+Author: vagrant <vagrant@cs4120>
+Date:   Wed May 5 03:46:12 2021 +0000
+
+    current rendition
+
+commit b4b7fabdbb2fb8cf70792311b850fb30c7a1fc0b
+Author: vagrant <vagrant@cs4120>
+Date:   Tue May 4 02:04:13 2021 +0000
+
+    current changes for running assembly code
+
+commit fe4687718ccb870ae14545d1fd5b94e4c7123462
+Author: apd67 <apd67@cornell.edu>
+Date:   Thu Apr 29 23:48:37 2021 -0400
+
+    Fixed minor bug
+
+commit 6dd4f3567e295616da2a5922e83184a86782dd7e
+Merge: 37a6973 0fb6af6
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Thu Apr 29 23:28:17 2021 -0400
+
+    Merge pull request #95 from the-compiler-wizards/tiling
+    
+    Tiling
+
+commit 0fb6af6e7714d134df8e2521077624e28e3e85c4
+Merge: 3dca980 d884315
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 30 03:25:15 2021 +0000
+
+    Merge branch 'tiling' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into tiling
+
+commit 3dca980a3a77e256620d9dc32d281685317acdce
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 30 03:24:54 2021 +0000
+
+    current semi-working version
+
+commit d8843153f93dc4cae982966c9d5743e5bf1c924b
+Author: Nidhish Vinayak Gokhale <nvg8@cornell.edu>
+Date:   Thu Apr 29 23:15:47 2021 -0400
+
+    Update TrivialRegisterAllocator.java
+
+commit c39e936b44385d187f247936ee64cf72d0ebeae6
+Author: Nidhish Vinayak Gokhale <nvg8@cornell.edu>
+Date:   Thu Apr 29 22:51:33 2021 -0400
+
+    Update TrivialRegisterAllocator.java
+
+commit 966698ddad70266f409b775f2c5e88d26960e6e1
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 30 02:13:13 2021 +0000
+
+    Current version that produces assembly
+
+commit bd3ff1cbe60a749a1c61230216f094b9e5bacbca
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 29 18:03:38 2021 -0400
+
+    clean up code to move into and out of the register
+
+commit b3699f115cbf50d1905acfbe029a75c420db2499
+Merge: 0fb4110 f7c86ed
+Author: vagrant <vagrant@cs4120>
+Date:   Thu Apr 29 21:45:59 2021 +0000
+
+    Merge branch 'tiling' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into tiling
+
+commit 0fb4110a6f158008ba1d7e4d5877013935bcff98
+Author: vagrant <vagrant@cs4120>
+Date:   Thu Apr 29 21:45:37 2021 +0000
+
+    Added pseudoinstructions for func pro- and epilogues, saving and restoring registers; added (obsolete?) info about number of return vals
+
+commit f7c86ed803fb79ac5ac75169b9bbe0b0065744b1
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 29 17:40:30 2021 -0400
+
+    trivial allocator, allocates trivially :)
+
+commit 1b4666645de26066c825005df0728d900bd68f12
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 29 15:32:43 2021 -0400
+
+    add trivial register allocation stuff
+
+commit 4cd5dbb5fefcd7716e13f1263a28dc56985aa9be
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 29 15:20:33 2021 -0400
+
+    Basic Trivial Allocation on the cusp of implementation
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 7fd3b9df8dcaec39759349ab0245cd3ef17ca74b
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 29 00:40:55 2021 -0400
+
+    instruction
+
+commit 05e8ef5e2e19092f45961711bf6f51e38bc925ba
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 29 00:06:03 2021 -0400
+
+    Print out temps
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 899fc24f9a3220e82f0b2ad44cb49a0d2e9a770e
+Author: Nidhish Vinayak Gokhale <nvg8@cornell.edu>
+Date:   Wed Apr 28 18:19:34 2021 -0400
+
+    Update TrivialRegisterAllocator.java
+
+commit 64eb063401560de20e7879d33215518eda5235a0
+Merge: 9422627 557056f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Apr 28 18:14:54 2021 -0400
+
+    Merge pull request #93 from the-compiler-wizards/reg_alloc
+    
+    Fix getRegister
+
+commit 557056f76a6857139d46a09dc3a6c898d7a60168
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Apr 28 18:14:20 2021 -0400
+
+    Fix getRegister
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 942262799e611d87362d5374e45c41bca62a1b5c
+Merge: 50a199d 56e534c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Apr 28 18:13:29 2021 -0400
+
+    Merge pull request #92 from the-compiler-wizards/reg_alloc
+    
+    Reg alloc
+
+commit 37a697382aaf2ca6ff8768fb3c254c497771e32a
+Merge: 27986e6 2f860bd
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Wed Apr 28 17:36:59 2021 -0400
+
+    Merge pull request #91 from the-compiler-wizards/pa4bugs
+    
+    Pa4bugs
+
+commit 56e534c1a2e6fabf8e42aa9e6a89979e707348bb
+Author: Nidhish Vinayak Gokhale <nvg8@cornell.edu>
+Date:   Wed Apr 28 17:23:01 2021 -0400
+
+    Update RegisterResult.java
+
+commit 745d237c2d3f6e46911d3e942790f7c331fc639d
+Author: Nidhish Vinayak Gokhale <nvg8@cornell.edu>
+Date:   Wed Apr 28 17:20:10 2021 -0400
+
+    Update TrivialRegisterAllocator.java
+
+commit 4d04a0c1c933f2cd8659d1587ee552124773d038
+Author: Nidhish Vinayak Gokhale <nvg8@cornell.edu>
+Date:   Wed Apr 28 17:19:09 2021 -0400
+
+    Update TrivialRegisterAllocator.java
+
+commit 27986e635ab2de7a9a6c1388cbeac31d494ff98e
+Merge: bc5e547 50a199d
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Tue Apr 27 23:11:41 2021 -0400
+
+    Merge pull request #90 from the-compiler-wizards/tiling
+    
+    Tiling
+
+commit 2f860bdab400e2604ef3d889da4f0105403f7367
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Apr 27 22:28:24 2021 -0400
+
+    Added failed tests from PA4
+
+commit ee50fdb0f6343cfdbad452a17ea486d6393ec250
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Apr 27 20:49:38 2021 +0000
+
+    Fixed and/or short-circuiting
+
+commit 6835bb4bced2afbfeb197c5fc2b65fef6fda6d34
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Apr 27 20:15:49 2021 +0000
+
+    Added length functionality
+
+commit 9a9c6d761a1c40b4fd10b355180355443a22a1f3
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Apr 27 19:28:11 2021 +0000
+
+    Fixed mod bug
+
+commit 50a199d7155d87308914a1a1997dcf0083aea165
+Merge: 6009e0b 36a07c7
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Apr 27 18:50:30 2021 +0000
+
+    Merge remote-tracking branch 'origin/tiling-stmts-obi' into tiling
+
+commit 6009e0b3cf77b1c9480c89fbf337a4bc0e54ad54
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Apr 27 02:58:51 2021 +0000
+
+    Cleaned multiplication, added division and modulo implementation
+
+commit 36a07c7ff3c718abf408fdf0824cb5cd51d4c75d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Apr 26 22:55:41 2021 -0400
+
+    tile statements
+
+commit 744bc54dc69ec3eab278e5d16d31772719e10c4d
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Apr 25 21:57:49 2021 +0000
+
+    More tiles for shift operations, boolean binary operations
+
+commit 376b67ed43227c760ba7f2578a7f5d2ea1c9e75a
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Apr 25 13:56:58 2021 +0000
+
+    Basic addition and subtraction
+
+commit 44c0a59a79386a525b43373bc23f8402889e7e0b
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Wed Apr 21 22:31:48 2021 -0400
+
+    Added const, temp, and name
+    
+    - Name shouldn't receive a tile on its own
+    - Temp has a semi trivial tile
+
+commit 849c4097a223553b4ca487dc0b019d47cccdc5dd
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Wed Apr 21 16:51:28 2021 -0400
+
+    Added equality binop tiles
+
+commit 3019cd610716317313f8c0aebf4461c241d611b1
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Apr 20 21:10:47 2021 -0400
+
+    Changed instruction constructor to use temps
+
+commit 4519e6e0b50f4a290c37992b86f659409f4e3847
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 20 20:13:15 2021 -0400
+
+    add tiling infrastructure
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit bc5e547784afaaf55a51e78795d7c3d06f67e282
+Merge: 857fe82 aabc8e8
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Mon Apr 19 12:03:44 2021 -0400
+
+    Merge pull request #89 from the-compiler-wizards/simulation
+    
+    Simulation
+
+commit aabc8e805f95f49baa125f4c1cd14b74c640bc33
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Apr 19 10:43:39 2021 -0400
+
+    change tester
+
+commit 2a1402e7cec7b6a0b8312afb41974105d0e47889
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Apr 19 10:43:07 2021 -0400
+
+    fix use
+
+commit fda9977b7230144685d6508d126f1cc29bcb3ffb
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Apr 19 10:42:23 2021 -0400
+
+    add minor fix to tracing
+
+commit 2190e70d6810677030d4f54473a3167ef554d065
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Apr 19 10:41:43 2021 -0400
+
+    Fix minor tiling issues
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 857fe82d470f5f46fceeaae6ee16394f791636a0
+Merge: 857d55f 9f321f6
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Sat Apr 17 23:01:00 2021 -0400
+
+    Merge pull request #85 from the-compiler-wizards/simulation
+    
+    Simulation
+
+commit 9f321f617aab3b8199ffa682aa928a06f3e03c73
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Apr 18 02:59:39 2021 +0000
+
+    basic set-up for register allocator(s) and tiling
+
+commit 560461d3f50918015ede437182c9a81bbfb532e9
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 14 23:53:01 2021 +0000
+
+    Fixed array concatenation bug
+
+commit 25ffb83016a7a6123a07b33e62000771764246cf
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 14 19:18:57 2021 +0000
+
+    Added bounds checking to array access for assignment
+
+commit 9c2d30d8eda7cf854774632bc8a60abd9b49f316
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 14 19:14:46 2021 +0000
+
+    Fixed minor logical error (wasn't accessing memory of address from recursive accessing)
+
+commit e378a3c4343a2e0395cf99e1cb7807fd293bf377
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 13 21:48:43 2021 -0400
+
+    Fix reordering
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 6462e9f50194787fe68ac98dff92d1db639c37a7
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 10 03:45:56 2021 +0000
+
+    The character fix :)
+
+commit 6d4e0b1af6f857292d81bfe78bb35ae171d0dc67
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 9 23:31:35 2021 -0400
+
+    Comment out reordering
+
+commit 88bbaadc97131be1585aa99345988345b30274e1
+Merge: a3ad444 d1848eb
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 9 23:21:13 2021 -0400
+
+    Merge branch 'simulation' of github.coecis.cornell.edu:the-compiler-wizards/compiler into simulation
+
+commit a3ad444a0a2b445d9752615e7e017121d66e5140
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 9 23:20:51 2021 -0400
+
+    Code cleanup and added --irgen
+
+commit d1848eba03dd2f20d12ff43fa2daf368c11b89a1
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Apr 9 23:18:57 2021 -0400
+
+    add CFG stuff
+
+commit c27d3273ba599ea74eaf2e276cfbd98f98fc201b
+Merge: 74e6d3d 30c22d2
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 10 03:09:28 2021 +0000
+
+    merge
+
+commit 74e6d3dd23b16d10b657066f7bdc282a85fb4d03
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 10 03:03:18 2021 +0000
+
+    Current iteration
+
+commit 30c22d2e20f87b78822f41dedc68ac92ba9a3d9c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Apr 9 22:25:03 2021 -0400
+
+    fix minor issue
+
+commit 2b09532e05d0338306f7bccbad371d5a36598671
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Apr 9 22:23:55 2021 -0400
+
+    Fix Assignment issue where functions are not call
+
+commit e1c15dac8157cc180d181be0e0cac7b98325ab31
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Apr 9 21:59:15 2021 -0400
+
+    fixed return error
+
+commit a64111b8b7c687eeb40a83510a3034a4d4bd563f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Apr 9 21:58:10 2021 -0400
+
+    fix minor build errors
+
+commit a406f0891dd5d39a2e3b95282b53f4c32c2b1181
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Apr 9 21:54:25 2021 -0400
+
+    increment I counter
+
+commit fdb3d517ecf31e4a0ee0b0befb31f350f73ea268
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Apr 9 21:53:57 2021 -0400
+
+    acount for moving argument registers
+
+commit 7687a83361c466d8dd2e9ed3bd3dc13e12c502df
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 9 18:46:34 2021 -0400
+
+    Separated given tests from custom ones
+
+commit dcce17927ecb45433634e51880ad4c4bc5963e04
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 9 17:11:15 2021 -0400
+
+    Added lowering for returns
+
+commit 0db7b8f8ad20000209ac23b03787cd7e81df91e2
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 9 15:33:44 2021 -0400
+
+    Fixed IRExp lowering
+
+commit 0004302584d507e6ad60c8cec26141f49e747a75
+Merge: 859b5c1 9be2f0d
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 9 15:20:55 2021 -0400
+
+    Merge branch 'simulation' of github.coecis.cornell.edu:the-compiler-wizards/compiler into simulation
+
+commit 859b5c121286cdcb573d6713d13f0f952c2e204b
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 9 15:20:35 2021 -0400
+
+    Fixed cjump lowering incorrectly
+
+commit 9be2f0dadf2eec76177e7c96a510415d1187d6ac
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Apr 9 14:50:11 2021 -0400
+
+    increase debug level of the simulator
+
+commit badedfdd5e1bf64f42474d6975837ef00273661c
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 9 17:54:49 2021 +0000
+
+    current testing file exposes issue
+
+commit d7c99a0c5c37818a33379fcf77188c4aa751906e
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 9 17:54:00 2021 +0000
+
+    current iteration -- bug in ULT should be visible
+
+commit 2ccb9854934353f13f7588e851e98409b6b0cfa8
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 9 03:22:11 2021 +0000
+
+    Fixed bounds checking label bug
+
+commit 981e66d3c767e1b6e0c9c4052283abd598f02ef7
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Apr 8 22:33:28 2021 -0400
+
+    Fixed basic errors with lowering
+    
+    * IRCompUnit not using translated functions
+    * Wrong temp used for RV0
+
+commit da9a7352bac49d5f062bc332b200c2bb356382ba
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 8 21:32:20 2021 -0400
+
+    dummy output file
+
+commit 28b8f3e97e0728ec4a0f86ca8fa9331a70f37324
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 8 21:31:54 2021 -0400
+
+    fix return
+
+commit 99214c9d2b1eff3a0852d42bd0604189e5cd63ed
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 9 00:56:26 2021 +0000
+
+    slight changes
+
+commit fa50c4f82af68aff3c0365504ab9d40a92717d1f
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 9 00:50:25 2021 +0000
+
+    current iteration
+
+commit 721514f6bb6c518bc543a52f0ee2e03f383c4ef6
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 9 00:49:41 2021 +0000
+
+    testing folder pa4
+
+commit 857d55fb2e3518a9b49dbcfd8bb29e96854610a2
+Merge: 814b1dc d2a7bd8
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Thu Apr 8 16:47:44 2021 -0400
+
+    Merge pull request #83 from the-compiler-wizards/nodaemon
+    
+    Added --no-daemon flag
+
+commit 814b1dc679e221de0413fba5d9cd86569da47119
+Merge: 14e5839 791053d
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Thu Apr 8 16:47:34 2021 -0400
+
+    Merge pull request #84 from the-compiler-wizards/irBlocks
+    
+    Ir blocks
+
+commit 791053dba2e649424974859cfcf9fa58b426705e
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Apr 8 16:43:30 2021 -0400
+
+    Fixed traces
+
+commit 14e58398ca58b70eb3a54abe904e7c8a32f76306
+Merge: bf74c19 961f3ad
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Thu Apr 8 13:02:34 2021 -0400
+
+    Merge pull request #82 from the-compiler-wizards/ir-translate-1
+    
+    Ir translate 1
+
+commit 961f3ad5314f0ad2bb9d18d8c7896137e261a2d5
+Merge: 138d15d bf74c19
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Thu Apr 8 13:02:23 2021 -0400
+
+    Merge branch 'master' into ir-translate-1
+
+commit 992af1eecfd27020e8b1b9138818d5c538158cb6
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 8 12:22:58 2021 -0400
+
+    fix minor errors
+
+commit 5176fa974cea89cb0f478732ad797b9ef308f383
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 8 12:20:29 2021 -0400
+
+    handle the edge case for fixing jumps
+
+commit 2ad16bbe4e6771174e4d27442dda2bd8b7bd5d13
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 8 12:10:57 2021 -0400
+
+    fix jumps
+
+commit 65143aebac3f9ae5c826047ec2dd4d36f4a4593d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Apr 8 00:00:38 2021 -0400
+
+    IR Blocks/CFG work to some degree
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 138d15d1583390a7b2aedb08966bdae961acb89f
+Author: vagrant <vagrant@cs4120>
+Date:   Thu Apr 8 03:44:22 2021 +0000
+
+    Added dummy temp translation for UScores
+
+commit ba973d4085a7ba634b87c1bcbd35afa8b08c4f75
+Author: vagrant <vagrant@cs4120>
+Date:   Thu Apr 8 03:03:32 2021 +0000
+
+    Modified temp names to (hopefully) avoid name overlapping errors with user variables
+
+commit d2a7bd8199ef5ab23a14cf8b16ee2c203959215e
+Author: vagrant <vagrant@cs4120>
+Date:   Thu Apr 8 02:35:27 2021 +0000
+
+    Added --no-daemon flag
+
+commit eccfa5c304554ec20d44a2937f866ab1180789ac
+Author: vagrant <vagrant@cs4120>
+Date:   Thu Apr 8 01:59:50 2021 +0000
+
+    Assignment IR Translation implemented
+
+commit bf74c1998b531279815ec3ab109f3dcf18632ab8
+Merge: f8726eb 9a85173
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Wed Apr 7 20:36:02 2021 -0400
+
+    Merge pull request #81 from the-compiler-wizards/ir-translate-1
+    
+    Ir translate 1
+
+commit 50e1bd5fe534bab35141688ca31699451d34ac7f
+Merge: 9a85173 f8726eb
+Author: vagrant <vagrant@cs4120>
+Date:   Thu Apr 8 00:08:19 2021 +0000
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into ir-translate-1
+
+commit f8726ebaa657e4c1456b5e7120d5b8c06a06abdc
+Merge: 00359a1 0c1ea6c
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Wed Apr 7 20:01:25 2021 -0400
+
+    Merge pull request #80 from the-compiler-wizards/irConstFold
+    
+    Ir const fold
+
+commit b2f287ecf7ceb4dde2ce952b995fb8ad3efca1b7
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Apr 7 14:39:12 2021 -0400
+
+    add more block information
+
+commit 9a851739197d5ab53ce20c52ed979911ebec1559
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 7 17:00:24 2021 +0000
+
+    First attempt at array concatenation translation
+
+commit 2e71019bf82127a4c3c390d011d5be25f19a4391
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 7 17:00:03 2021 +0000
+
+    Changed LT in loop to ULT
+
+commit c7a002929a7986c7e215f198bc8162788d4221bb
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Wed Apr 7 12:29:31 2021 -0400
+
+    Added test case for blocks
+
+commit 3e360a81bd8d9c5302a3f387bb33d54e6eb1a11e
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 7 03:48:43 2021 +0000
+
+    jesus christ
+
+commit 0aab5e641523caf30b6270dea3c55ed2bd0d8348
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Apr 6 23:45:05 2021 -0400
+
+    Added logic for creating maximal basic blocks
+    
+    * weird thing w/ the arraylit file saying I deleted a line and added a
+    new line in the same spot ??
+
+commit 885bfd7fd5fc0db82d9d8321abb6f4451651d607
+Merge: de1fae9 00359a1
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 7 00:16:09 2021 +0000
+
+    Fixing conflicts
+
+commit de1fae9cf73f675e5c45b79bfa1689f771878b99
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 7 00:09:51 2021 +0000
+
+    Minor change
+
+commit d4ffaf29a202ee18bcb4e579c2ae9653e43ed7af
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Apr 7 00:01:44 2021 +0000
+
+    In progress array initialization
+
+commit 00359a151f354c956f6145d55a85d5996d5bbbf4
+Merge: 341d0eb 55df3ce
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 18:50:23 2021 -0400
+
+    Merge pull request #78 from the-compiler-wizards/ir-translate-2
+    
+    Ir translate statements != assignment, underscores
+
+commit 55df3cee5d9e64a1b8f3cb6278dde0dddc2a4f50
+Merge: 6da984f 341d0eb
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 16:44:55 2021 -0400
+
+    Merge branch 'master' into ir-translate-2
+
+commit 6da984f548de7d9f32081ef5ef9cc9f96bb1ceeb
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 15:55:03 2021 -0400
+
+    The previous was Program -> use filename instead of base name
+
+commit cc13faade9e1147fda267520d9664f420c3146e1
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 15:52:57 2021 -0400
+
+    use filename insted of basename
+
+commit 9da94d6db7155fd9a7345fa6fb673793b3e2efa8
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 15:51:52 2021 -0400
+
+    add names to parse trees
+
+commit 7368a243334037f58892d42652a4999d495ca5f2
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 15:49:30 2021 -0400
+
+    Method def
+
+commit 0c1ea6c2d147ba51cee1630750a6a60039b80e6d
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Apr 6 11:12:34 2021 -0400
+
+    Minor formatting tweaks, added test for const fold
+
+commit 963c8362587b44ef44f91eb3ac4e69dbee34a663
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 00:54:00 2021 -0400
+
+    While
+
+commit c7e6e48a7a8a336021f9d67879d00a03174a9877
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 00:53:54 2021 -0400
+
+    If
+
+commit 80c80385d12fe842e009f03da7ba39a144b092c9
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 00:52:40 2021 -0400
+
+    CTranslation - getting e1, e2 from And and Or and e1 from Not
+
+commit d4e09bd8fe02382a5d155ad4fc72ab24f218e97d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 00:51:32 2021 -0400
+
+    CTranslation
+
+commit de5e8590c7862f18b7e8818278b8d6af98dbb5cf
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Apr 6 00:51:08 2021 -0400
+
+    MethodCall
+
+commit 24cb934859842f78347df8dffce2480ac33d2c9d
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Apr 5 23:53:08 2021 -0400
+
+    Added const fold to binop
+
+commit 341d0eb61a78f5e59ecb444c999969cfdb5fcdda
+Merge: 900299f e3fa625
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Mon Apr 5 23:18:18 2021 -0400
+
+    Merge pull request #77 from the-compiler-wizards/irLower
+    
+    Ir lower
+
+commit 900299fd3db027fb402e4c3c5595e91a6a593d21
+Merge: 1697a56 9f10557
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Mon Apr 5 22:37:42 2021 -0400
+
+    Merge pull request #75 from the-compiler-wizards/fixPA3Bugs
+    
+    Fix pa3 bugs
+
+commit 9f1055701520a88c7008c8a0e166c246870800fc
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Apr 5 12:36:11 2021 -0400
+
+    Fixed empty arrays not type checking
+
+commit 58e319e1b6c41ab78e7387ff1ffe57cb012244d1
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Apr 5 12:12:40 2021 -0400
+
+    Fixed arrays containing function calls
+
+commit b460c131b637d68f474fde3334bea9e8d8ff3344
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Apr 5 11:52:19 2021 -0400
+
+    Fix uscore on multireturn&array index type on decl
+
+commit 9be51b2e9187b59638f8cf900d445e6b3e375890
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Apr 5 11:24:41 2021 -0400
+
+    Fixed no checking if same name multiple functions
+
+commit 388f70fceae43d7f3e6af2497cab418e092720d4
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Apr 5 03:57:47 2021 +0000
+
+    Idetifier ir translation
+
+commit 924684e31556c35e3df7533a12b8ce7657d83016
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Apr 5 03:57:28 2021 +0000
+
+    Character literal ir translation
+
+commit 0444a15e905729304d00049002ccca6ee56b2c14
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Apr 5 03:57:04 2021 +0000
+
+    Array literal ir translations
+
+commit 1bacc0699d482e1a287c019c2b3643b04167db6c
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Apr 5 03:56:34 2021 +0000
+
+    Array access IR Translation implementation
+
+commit 50e3ef271e9d807491863a48ddb0776b2b97a97b
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Apr 4 18:47:03 2021 -0400
+
+    finish up procedure calls
+
+commit 674fdd7447e45fa8a4b80698c4d14ff453ecf716
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Apr 4 18:20:27 2021 -0400
+
+    generalize Visitor errors
+
+commit 0a74a503d82adbe1ebfa8302af0e478344f73ef8
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Apr 4 18:20:00 2021 -0400
+
+    generate function names according to ABI standards
+
+commit e3fa625bcd318467f6281110301b2c1dc553be43
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Apr 4 17:43:51 2021 -0400
+
+    Only add expression to lowered transl. if not null
+
+commit b62cf83c4000c23b54e9b44ce4da85164a167cbe
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Apr 4 17:10:56 2021 -0400
+
+    Added cjump, call, and callstmt
+
+commit 2ef6bff5cef59539f580ecb4f69af92b3f499428
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Apr 4 14:09:18 2021 -0400
+
+    procedure call
+
+commit 8491f5bb86c5805cda745617f10a5752e920379d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Apr 4 14:09:10 2021 -0400
+
+    linting
+
+commit e4fa447421e605768292612e208180db9b9e844d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Apr 4 14:08:10 2021 -0400
+
+    check if a Variable is an underscore
+
+commit b9ca0eb7e7fff306875c0463f9f3d86260e4e4b0
+Author: coa22 <coa22@cornell.edu>
+Date:   Sun Apr 4 17:35:36 2021 +0000
+
+    return
+
+commit 9b6f89b69988f196b043a8ba752948b96da525b7
+Author: coa22 <coa22@cornell.edu>
+Date:   Sun Apr 4 17:22:24 2021 +0000
+
+    Declaration
+
+commit 213a54d427a2ae7cc8e710b5edecfa6a75cbced5
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Apr 4 12:14:49 2021 -0400
+
+    Added ESEQ, SEQ, and MOVE
+
+commit 2ff2a8bc8b443c37138da4bec4ea46534cacb54d
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Apr 4 10:09:24 2021 -0400
+
+    Forgot to lint
+
+commit 6b4a0c7acd4e670cdc555e70dc1006095045892b
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Apr 3 21:49:56 2021 -0400
+
+    Added binops, added test to confirm lowered
+
+commit ced92223f5337bf7d171957076103b2d5af06f1f
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Apr 4 01:24:21 2021 +0000
+
+    Modified to include ULT changes from Ed
+
+commit c177e9c794aaa73a683d58ec6ae73b1e5ad3d037
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Apr 4 00:41:45 2021 +0000
+
+    Finished binops (minus array indexing and concatenation), unops
+
+commit aada3cc1edbd0f4ca1ffc2ea9e56be39a0b0f783
+Merge: 43a4e89 adc3e1f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Apr 3 19:48:08 2021 -0400
+
+    Merge branch 'ir-translate-2' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into ir-translate-2
+
+commit 43a4e893879dc2d2db9221b87883585640a39887
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Apr 3 19:14:12 2021 -0400
+
+    block
+
+commit 1278b75da6a5e559061c20cc7ea2f6e6f77a0f57
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 3 23:45:22 2021 +0000
+
+    Standardized label/register name generation
+
+commit adc3e1fd6ad1375e92e6bf015d702f5fa698077b
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Apr 3 19:14:12 2021 -0400
+
+    block
+
+commit 09bf2dd36e66ccab386dd74cd04f89076fee6079
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 3 22:55:16 2021 +0000
+
+    Changes to standardize C Translation + variable names and getters
+
+commit 573df2c868af2aa30a3a73d15b2b2fe3fda7f8b4
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 3 17:02:42 2021 +0000
+
+    Added a static incrementer labelGen field for ensuring unique labels are created -- give the new IRLabel() the string name you want and it will append a unique integer value to the end, allowing reuse of common label shorthands from class (make sure you use the name() function if you want to use the string in other IR expressions however)
+
+commit ea94f569e49631e9f82a10fbf4002ffeb1bf28db
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 3 17:00:18 2021 +0000
+
+    Made value a public field
+
+commit 9c8fa986ca6245da11e9bbc69cc688f8f7babc2a
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 3 16:59:54 2021 +0000
+
+    Basic, unoptimized implementations of some of the binops
+
+commit d9095ef944532defce4013aa7b8c0177b080a845
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 3 16:59:06 2021 +0000
+
+    Added a static CTranslate field to assist with boolean expression translations
+
+commit a36d96561b130519e71ccd5b8603377e1ae2a423
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 3 16:58:18 2021 +0000
+
+    Added getter for IRTranslation
+
+commit 38cfc46419c3e01998d0010bc92a9f0d50558ee9
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Apr 3 15:59:24 2021 +0000
+
+    Moved plus irtranslate logic to binop
+
+commit bf3ce33c14f40cd2ac279624a6e5136aa1847d07
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Apr 2 22:10:04 2021 -0400
+
+    Made IR Lowering testable
+
+commit d74b046083ed30b68ede558d40db35c59ff34018
+Author: vagrant <vagrant@cs4120>
+Date:   Fri Apr 2 16:55:19 2021 +0000
+
+    Modified for errors -- temporary fix changing SemanticError to TypeException, TODO fix this
+
+commit 07697e891aad3e70939e237c1f36552f17c2d618
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Apr 1 22:36:09 2021 -0400
+
+    Added basic exprs
+
+commit ac6e2c09db4579f89caa4cbd4ab3e94479011e43
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Apr 1 20:35:03 2021 -0400
+
+    Added lower visitor
+
+commit a78fc5ff162bc45403eb118621076dd9ea655dcb
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 31 23:47:05 2021 -0400
+
+    Made the IRTranslation Visitor pattern and translated booleans and integers.
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 1697a565f9bc7883a2b7fbee2d39ed6518fc0642
+Merge: 6a8d7a7 5bf6a7d
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Mon Mar 29 12:04:17 2021 -0400
+
+    Merge pull request #74 from the-compiler-wizards/IR-skeleton
+    
+    Add cs4120 IR skeleton
+
+commit 5bf6a7ded645bdc6df07df58f32efdad2d6b4d49
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 29 12:02:37 2021 -0400
+
+    Add cs4120 ir skeleton
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 6a8d7a754b1106307f91617397915973da141710
+Merge: 9cdffe3 dadd47b
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Sun Mar 28 22:44:26 2021 -0400
+
+    Merge pull request #58 from the-compiler-wizards/fixImports
+    
+    Fixed imports so they work on autograder
+
+commit dadd47b4d8ba155fdf25f2adb7c41280f1e4cea6
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 21:50:58 2021 -0400
+
+    Fixed imports so they work on autograder
+
+commit 9cdffe3f78b84145943a532a385709c7f34b51f5
+Merge: 0784cd6 2ec4b0a
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue Mar 23 21:04:50 2021 -0400
+
+    Merge pull request #56 from the-compiler-wizards/newtests
+    
+    Newtests
+
+commit 2ec4b0a71d1199d28d435ed640b2deb50213c81b
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Mar 24 01:04:18 2021 +0000
+
+    More complex function call examples, checking if they work in various expressions
+
+commit 019a932f5e1a95207a5eaa11fb4e3f6cf12bb0d6
+Merge: ed59026 0784cd6
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Mar 24 01:02:46 2021 +0000
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into newtests
+
+commit 0784cd610069c5c8904949b4cd74dd8cf56f3832
+Merge: 486b55b 12eab95
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue Mar 23 21:02:34 2021 -0400
+
+    Merge pull request #57 from the-compiler-wizards/fixLength
+    
+    Fix length
+
+commit 12eab95e8a9f94bf80b724daff461d9e3085253e
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 21:01:12 2021 -0400
+
+    Fixed length
+
+commit 31282120f7a6253cfe1d490622f973099894797a
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 20:53:42 2021 -0400
+
+    Undid swap of line and col
+
+commit 5608dd5de964241b8dcf288f69d4de5ac76ebad0
+Merge: 8e529a0 486b55b
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 20:52:26 2021 -0400
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit ed59026b744fb6fcf7267d6e3e51ce854f9191f6
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Mar 24 00:14:01 2021 +0000
+
+    Mutual recursion testing
+
+commit 01a59d49ab9e2841de3e56ff342019529cdae62a
+Author: vagrant <vagrant@cs4120>
+Date:   Wed Mar 24 00:08:59 2021 +0000
+
+    Statement error testing
+
+commit 486b55bad98264486bc7ac7ab5a0925baa3d8ff5
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 19:53:43 2021 -0400
+
+    fix error messages
+
+commit 8e529a047c1e7e97ee37fd0c9a915a4877b765e8
+Merge: 27dbdcb 75d5d11
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 19:44:48 2021 -0400
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 75d5d11541f050d75dd12091bbd2d47661c0faa6
+Merge: 648920f 29c78a1
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue Mar 23 19:12:12 2021 -0400
+
+    Merge pull request #54 from the-compiler-wizards/error-message
+    
+    Add default compiler behavior
+
+commit 29c78a14a4d475c441f1b6a742b5131f9fc2c9a7
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 19:08:31 2021 -0400
+
+    Add default typechecking behavior
+
+commit 648920fb45696340d9339cc0c38fc9ff24f0fa4a
+Merge: 523b75a 5fe1399
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue Mar 23 18:38:58 2021 -0400
+
+    Merge pull request #53 from the-compiler-wizards/error-message
+    
+    Format Typecheck errors to match PA3 Specification
+
+commit 523b75a8538aa91198fddfaf121cbd0dab1c5dc8
+Merge: 99ef378 f7c7701
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 18:34:30 2021 -0400
+
+    Merge pull request #52 from the-compiler-wizards/newtests
+    
+    Newtests
+
+commit 5fe1399176bf09c0e649b863cf02cf4484cb9b0a
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 18:33:13 2021 -0400
+
+    add functionality to print errors according to spec
+
+commit 72bf44a07513b97914bcc5f8a53fdf3b4b1f004d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 18:32:14 2021 -0400
+
+    moved file
+
+commit 14b3485eccbf2eb0e455ca39a9001716be727b11
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 18:31:58 2021 -0400
+
+    modify Error classes to match Specifications given
+
+commit 0e4e1c6e9c6bd8440bbf54382f1d7d2a64eae967
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 18:18:55 2021 -0400
+
+    Make Errors adhere to PA3 specs
+
+commit f7c77018db70e04fb88eaa0a01910e2218c65089
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Mar 23 21:48:52 2021 +0000
+
+    Added another expression failure case for function arguments
+
+commit 596bddba3877073cfede7f7e6c6e63e4b05a5658
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Mar 23 20:51:05 2021 +0000
+
+    Type checking expressions -- should fail
+
+commit 78f4d7f1a29800290e59628a2fc5ce1f920a0b1d
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Mar 23 20:50:13 2021 +0000
+
+    Modified to run new tests
+
+commit 99ef378caa6afbe473ac9086dc3fb5edf171a241
+Merge: 681cf5b 40c3e0e
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue Mar 23 14:44:48 2021 -0400
+
+    Merge pull request #51 from the-compiler-wizards/newtests
+    
+    Newtests
+
+commit 40c3e0e24a6134ceb6c7cadcd7a813f67b50a685
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Mar 23 18:38:56 2021 +0000
+
+    Modified to run sanity tests
+
+commit fb23a7f6eccf1aa19f1f0740e4c3efc4e73509bd
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Mar 23 18:38:31 2021 +0000
+
+    Missed file in first add
+
+commit e54a2479f532a6dd3fde8d71219e7797dae3dbc2
+Author: vagrant <vagrant@cs4120>
+Date:   Tue Mar 23 18:37:55 2021 +0000
+
+    Added release sanity tests
+
+commit 681cf5be6c9573bd7850ff81d2b54e6705fdfecb
+Merge: 8efd2fd c8e81ca
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 13:33:42 2021 -0400
+
+    Merge pull request #50 from the-compiler-wizards/function-collector-3
+    
+    reduce function collection strictness
+
+commit 8efd2fdb4b42a525ddd619b9cbaec4765009f114
+Merge: 4bf6af3 481c344
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 13:33:30 2021 -0400
+
+    Merge pull request #49 from the-compiler-wizards/line-col-2
+    
+    fix minor error with swapped lines and columns
+
+commit 481c344eaa75af685f5f455e247b6fb40e9f9f66
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 13:28:27 2021 -0400
+
+    fix minor error with swapped lines and columns
+
+commit c8e81ca3ad786306a812d7d471586cf62d12f79e
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 13:27:33 2021 -0400
+
+    reduce function collection strictness (allow multiple definitions in the same file)
+
+commit 27dbdcba59ef2a378131477ee7586351884993f8
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 13:05:34 2021 -0400
+
+    Fix (swapped) row and col #s
+
+commit 4bf6af3a1d20c9f3be7c82066315cdf331392ade
+Merge: cb1943c 8b92837
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Tue Mar 23 13:01:02 2021 -0400
+
+    Merge pull request #47 from the-compiler-wizards/fixUscore
+    
+    Fixed uscore being allowed for non function calls
+
+commit 8b92837a7d221f02cb57870c323006332f63c097
+Merge: 9e0a126 cb1943c
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 13:00:48 2021 -0400
+
+    Merge branch 'master' into fixUscore
+
+commit cb1943c4c6d1348969af430dee8e2003da58e100
+Merge: c35609d 08f6073
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue Mar 23 12:55:32 2021 -0400
+
+    Merge pull request #46 from the-compiler-wizards/uscore-var
+    
+    use null rather than IntType. Clearer (implementation)
+
+commit 9e0a12685d4c092a742974a729a13a7ae40f0145
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 12:54:04 2021 -0400
+
+    Fixed unops not type checking correctly
+    
+    - Accidentally visitedChildren of expr, not accepted
+
+commit 6035fd43894c64fa2cc8bba14ef0c6659d54fcd2
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 11:46:02 2021 -0400
+
+    Fixed uscore being allowed for non function calls
+
+commit 08f6073bda65233c54b7a9b958a00d4033b43915
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 01:52:52 2021 -0400
+
+    use null rather than IntType. Clearer (implementation)
+
+commit c35609d4143b4ffe4f1d39f8651f450766a4d94e
+Merge: 4db53e3 fa60e5a
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue Mar 23 01:51:03 2021 -0400
+
+    Merge pull request #45 from the-compiler-wizards/uscore-var
+    
+    Remove UscoreDecl from Declaration Class
+
+commit fa60e5ab81fe705c4a787abcfbb2f6848b057cf0
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 01:49:52 2021 -0400
+
+    Remove UscoreDecl from Declaration Class
+
+commit 4db53e304176a754665919e19d4b328cd834ffa2
+Merge: 65551b3 2b9ab09
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 01:32:36 2021 -0400
+
+    Merge pull request #43 from the-compiler-wizards/typecheckStatements
+    
+    Typecheck statements
+
+commit 65551b3f4393fc638bc50a36763a2b7595ee784b
+Merge: 5c293e1 69ebd22
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Tue Mar 23 01:32:04 2021 -0400
+
+    Merge pull request #44 from the-compiler-wizards/line-col
+    
+    Add lines and columns
+
+commit 69ebd22ea5b4527131af596906dc9c1e550d310e
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 23 01:28:48 2021 -0400
+
+    Add lines and columns
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 2b9ab09ca6888c06d2b91596d859bb7f4d702996
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 01:08:28 2021 -0400
+
+    All type checking done! (added procedure calls)
+    
+    * fixed bug where logic for return being void/unit was looking at the
+    expected # of params of current function, not expected # of things to
+    return
+
+commit 0d1d806fb2f36fd9c6f27e0218a3158d4e9c0b0c
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 00:45:49 2021 -0400
+
+    Added multiassign!
+
+commit 7d3736751c0d3feebb1c05b6a4d8d8e7e276350d
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Tue Mar 23 00:20:04 2021 -0400
+
+    Added typecheck arr index assign
+
+commit 53ba7a03763f0ac9176d14229fd9dbae4ef50ec1
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Mar 22 23:46:23 2021 -0400
+
+    Added length to type checking
+
+commit 5c293e10e81f41e7b38f6056a87b7e8b3fe7fffe
+Merge: da43c95 d2545d8
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Mon Mar 22 22:44:45 2021 -0400
+
+    Merge pull request #42 from the-compiler-wizards/typecheckStatements
+    
+    Typecheck statements
+
+commit d2545d81ea83641ee760d4a05a93fe5e6b2f7c95
+Merge: 744a399 da43c95
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Mar 22 22:05:23 2021 -0400
+
+    Merge branch 'master' into typecheckStatements
+
+commit 744a3999f689036769cc04747cf7b97ba9067c3c
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Mar 22 21:02:19 2021 -0400
+
+    Added type checking w/ method calls
+
+commit da43c95a3205ce23ac06f759fb48af7f1649d973
+Merge: f8e77c5 d8d8f6f
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Mon Mar 22 20:37:42 2021 -0400
+
+    Merge pull request #40 from the-compiler-wizards/function-collector-2
+    
+    Add function collection functionality
+
+commit f8e77c5f1bd7a010992242bf7153bb87a5ca1fa4
+Merge: 3108d70 7a2cd60
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 19:35:58 2021 -0400
+
+    Merge pull request #41 from the-compiler-wizards/context-add
+    
+    Catch ContextException in add
+
+commit d8d8f6fd96d47a74b79479df708922d343a70400
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 19:34:38 2021 -0400
+
+    Make getType throw a type exception
+
+commit e4e7fbcfa314068920227b66793f14b3d8ba1e97
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 19:34:06 2021 -0400
+
+    fix test structure for typechecking
+
+commit 3108d7050b2475377d59df086e23d1e72c6277a8
+Merge: 41189c9 13aed7c
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Mon Mar 22 19:17:50 2021 -0400
+
+    Merge pull request #39 from the-compiler-wizards/newtests
+    
+    Newtests
+
+commit a6298926bf88a715d61f14c125e6764a2b1e1221
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 18:39:00 2021 -0400
+
+    add a basic test for function collection
+
+commit 0b20dfaef6dbc1304c608810f911f04e0577b82f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 18:38:43 2021 -0400
+
+    override functions in Program
+
+commit 13aed7c5ac6b4834b9872425dbd50085b1376188
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 22:31:42 2021 +0000
+
+    Test cases exposing lexer issues revealed during PA2
+
+commit 776864a4f71bc8b90666035b4421c408517331bc
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 22:30:45 2021 +0000
+
+    Run new lexer tests
+
+commit 7a2cd60697c1eaf995d363d2b3c14cca1a4c6606
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 18:28:47 2021 -0400
+
+    catch ContextException in add
+
+commit 32684daba4424c2f5092a9cc5e5e006763be7b8a
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 22:28:12 2021 +0000
+
+    Modified string errors to better reflect their test cases, e.g. if there is a bad character escape in a string, give the line and column number of that instead of the start of the string
+
+commit 41189c9e262371918ed8497b6d16a3e753a93c3e
+Merge: 6bc6cff 0765f21
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 18:11:07 2021 -0400
+
+    Merge pull request #38 from the-compiler-wizards/context
+    
+    Modified add to throw an exception if id is already bound, added sett…
+
+commit 6f10c1ca2d0b956a3734ecea6c0740c6420f09f2
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 18:03:57 2021 -0400
+
+    Implement FunctionCollection
+
+commit 64a0b7e98400deaaefba097e99b6dc45c5c99f08
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 22:03:32 2021 +0000
+
+    Added new EOF symbol in order to properly raise parser exception when token stream previously ended unexpectedly - now, an EOF token will appear, which will allow the parser to know where it came from and properly terminate (without previous casting exceptions)
+
+commit cb86998ff261de3da5c7136f00f8226c71ae28a4
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 18:03:23 2021 -0400
+
+    add functionCollection methods and a method to generate a Typechecker with a given context
+
+commit 12c0b3c9611c2ff198fca326cd32512a8d33bf10
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 22:02:07 2021 +0000
+
+    Run new parse tests
+
+commit 75b433f2ef99081aaf0c5ed532d80c1cd28dac48
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 18:02:00 2021 -0400
+
+    fix ParseTree Typo
+
+commit f357203d740fc3f4e4f12095fc5424f46e9e7995
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 22:00:49 2021 +0000
+
+    New test cases to expose EOF issues
+
+commit a634ae9d330574ff7fe68ba09ca0de44799f21cf
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 17:45:36 2021 -0400
+
+    Create a ParseTree wrapper class
+
+commit 64953c8d80e33134728653adff702f6dec0e59f5
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 16:28:43 2021 -0400
+
+    add function collection methods to the function collector
+
+commit feefd4268b784643c80ffc3c4ca0ef1d1a0f0e10
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 15:58:07 2021 -0400
+
+    add a method to get the name of a method declaration
+
+commit 475d9021a44cda492b4d95a185212ca08668b52f
+Merge: 18c7784 6bc6cff
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 19:11:18 2021 +0000
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into newtests
+
+commit 18c77849fc68a84469a3c19348fd73d5957a1c41
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 18:35:44 2021 +0000
+
+    Modified declarations to disallow size declarations for arrays while also assigning elements
+
+commit a003bb26b7106c84e93532e7a177c7fcd41bfc1f
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 18:34:38 2021 +0000
+
+    Added fromList constructor to get an ArrayAccess object when parsing an assignment operation
+
+commit 0765f21e4bab4821e87b5874a5292a0e58539fdc
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 17:03:11 2021 +0000
+
+    Modified add to throw an exception if id is already bound, added setter documentation to Context.java
+
+commit 290c1341861df72ab654a3442c916fe98a13a8ad
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 16:55:49 2021 +0000
+
+    Current progress toward fixing last test case, not finished
+
+commit ea33281e522c5dc06f3194d957f5ed6d1df6555c
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Mar 22 12:52:30 2021 -0400
+
+    Added typechecking for returns
+
+commit 6bc6cff62b082519566752fac1f1c4828ea549db
+Merge: 5d0c2db 76a1801
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:46:32 2021 -0400
+
+    Merge pull request #37 from the-compiler-wizards/function-collector-1
+    
+    Modify Program, interface, use and methods to simplify function collection
+
+commit 5d0c2dbaedf3d34d29bc5727b4ab68a9c8c1aa4b
+Merge: 43cf7f6 24f8de3
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:41:36 2021 -0400
+
+    Merge pull request #36 from the-compiler-wizards/function-collector
+    
+    Get rid of Line
+
+commit 76a1801c5eb8f1b387862a49fed2114b92466fbd
+Merge: 994327e fe2f930
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:34:52 2021 -0400
+
+    Merge branch 'function-collector-1' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into function-collector-1
+
+commit fe2f930ffd0e1123f2d79d3eea37aaec0dab0630
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:32:14 2021 -0400
+
+    add a method to get filenames from use statements
+
+commit 994327e4686c61b494ce8295b7d4117aace706ad
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:32:14 2021 -0400
+
+    add a method to get filenames from use statements
+
+commit aef64990384e9d8bb8e53307505648a36e2acd5d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:06:30 2021 -0400
+
+    get method declarations from an interface
+
+commit 9a0fd12848f35b676902ca0776505711b3cc50e6
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:06:04 2021 -0400
+
+    missedthis file in the previous pr
+
+commit 636263f08eb67428667793ad4b8fa0329e920a5b
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:05:40 2021 -0400
+
+    get a list of all the method declaration made in a program
+
+commit 8549b58170c7e011b74b2897336a0626712bd723
+Merge: 2e5cab6 2e36309
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:25:11 2021 -0400
+
+    Merge branch 'function-collector-1' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into function-collector-1
+
+commit 24f8de303abefcb2fd78d3fec98536dbec41f7fa
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:24:36 2021 -0400
+
+    remove Xilexer.java before building.
+
+commit 2e5cab6d5e3da1554aea6922f4ae324ba4ef55a5
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:06:30 2021 -0400
+
+    get method declarations from an interface
+
+commit 8d1b7f5309e87b7ad67b9ce94f0589e7dcf080ac
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:06:04 2021 -0400
+
+    missedthis file in the previous pr
+
+commit ea07493c531ef036b5ce933f3c39868b56a3ee8f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:05:40 2021 -0400
+
+    get a list of all the method declaration made in a program
+
+commit 2be556530ff98d69ee30791c48e6e12c6a5a4cf9
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:08:16 2021 -0400
+
+    Stop methodDef from implementing Line
+
+commit b566ec454285f91176c8749487f71e9f5dfccb0c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:07:29 2021 -0400
+
+    stop stmt and Expr from implementing Line
+
+commit 2e36309cdfad98c3dbebb20fa9618cad7c050c5d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:06:30 2021 -0400
+
+    get method declarations from an interface
+
+commit 39c6ef6975ecd7df3760f496bd1848070ab5f202
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:06:04 2021 -0400
+
+    missedthis file in the previous pr
+
+commit e7a3924fd5988a03bc203d09120151f77ec8d737
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 11:05:40 2021 -0400
+
+    get a list of all the method declaration made in a program
+
+commit fa68e5afa4e6610d4f3c258b41be5a4acb3ea464
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 10:02:23 2021 -0400
+
+    annotate gitignore to match prev commit
+
+commit 8344ded680a9afc6d672433ba09ca00b9f0df66a
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 10:01:57 2021 -0400
+
+    ignore lexer and parser generated code
+
+commit 3f54d512595be7ebd7ec4f5c0e56f9cf818b906f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 22 10:01:03 2021 -0400
+
+    get rid of lines ( a pointless abstraction)
+
+commit a86d5c753cb86c9ea5fd4564739bddda4f533d47
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 04:58:37 2021 +0000
+
+    Modified for correctness
+
+commit f804cd74573802ef890f207024a8ae597e316b57
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 04:57:34 2021 +0000
+
+    Modified to pass new tests (all except arrsizedec)
+
+commit 7dd187ae15fe012cc1086c05b468e30f86b45163
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Mar 22 00:42:43 2021 -0400
+
+    Added typechecking for method defs(not collection)
+
+commit 60d04c12792c665bd6dc533e4ba4354c0416934f
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 23:09:07 2021 -0400
+
+    Added if type checking, fixed while scopes
+
+commit 43cf7f61f3a8123a9cd7fa6e5dbe94242daf5107
+Merge: b85cd00 95f7efc
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Sun Mar 21 22:13:10 2021 -0400
+
+    Merge pull request #34 from the-compiler-wizards/typecheckStatements
+    
+    Typecheck statements
+
+commit 95f7efca25cbe24de2433d33e654223370aa3809
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 22:07:31 2021 -0400
+
+    Fixed merge conflicts, deleted XiLexer.java~
+
+commit 1b6c41b99afce91a204bf5e924c908a2d350c0fb
+Merge: eaac5d8 b85cd00
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 22:06:01 2021 -0400
+
+    Merge branch 'master' into typecheckStatements
+
+commit b85cd006ce7b16637addf29acd861e3cd76abb76
+Merge: 26cc97e 66aa6f7
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Sun Mar 21 21:54:57 2021 -0400
+
+    Merge pull request #33 from the-compiler-wizards/newtests
+    
+    Newtests
+
+commit eaac5d89088459a1fadbff90ba2a914e6caf80c8
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 21:53:52 2021 -0400
+
+    Fixed int pretty print removed by accident
+
+commit 26cc97eb421477a6b72512e6683a04c2560fb35a
+Merge: 7814489 14ba7ee
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 21:48:47 2021 -0400
+
+    Merge pull request #32 from the-compiler-wizards/function-type
+    
+    Add Function type
+
+commit 6d805f3083e852f6fa19c383628a8063336ed3c9
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 21:41:51 2021 -0400
+
+    Added while & block typechecking
+
+commit 7814489c78670b7853222e6f26ffd08685ecf0f2
+Merge: 93faf08 6bced37
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Sun Mar 21 21:39:20 2021 -0400
+
+    Merge pull request #31 from the-compiler-wizards/context
+    
+    Context
+
+commit 14ba7ee968c0c6968cc7ae932ea839215b9a45a4
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 21:24:48 2021 -0400
+
+    Update MethodDeclaration.java
+
+commit 66aa6f7a7e193484c7cef6662c9818dad67dfc11
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 01:20:12 2021 +0000
+
+    Updated script with new parse test files
+
+commit b8ef29ff1842aacf8ecfebdb1df2f1c70f64e023
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 01:19:09 2021 +0000
+
+    New tests for PA2 issues
+
+commit 87d217100bf8c2338100dc5edab8c9519fc63941
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Mar 22 01:17:55 2021 +0000
+
+    Fixed error throwing line and column numbers for YYBASE
+
+commit 9498b19fb138c60f9552230e6b1275fd771c3926
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 20:57:27 2021 -0400
+
+    Add an is procedure method
+
+commit 29680c4f90f545ec57bf10e36a263c0514ddc9fa
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 20:52:53 2021 -0400
+
+    Add function Types to simplify function collection
+
+commit c80f99ce38ecc7d7e2c5775168e190bd7eecc2e8
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 17:01:14 2021 -0400
+
+    Added assignments (for single vars) and underscore
+
+commit 53a7751dfb52e9d8d99b4c6bfce8ae513b038463
+Merge: 6bced37 93faf08
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Mar 21 19:55:54 2021 +0000
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into context
+
+commit 09daf319299b025f09d51b1e98a6d2fd955ccb59
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 15:28:40 2021 -0400
+
+    modify declarations to simplify methodType logic
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 381c563818843013c3f1570f599583a239b70b2f
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 15:01:22 2021 -0400
+
+    Added declaration typechecking
+
+commit 6bced37f1d58dc0fc28b34addc819d0ae8cd8605
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Mar 21 18:38:05 2021 +0000
+
+    Fixed try/catch for setReturnType exception
+
+commit 93faf0890619febd6530ac4bcaf36b2c6a611027
+Merge: 9fce0f5 cd2c71a
+Author: Andrew Paul Dettmer <apd67@cornell.edu>
+Date:   Sun Mar 21 14:33:26 2021 -0400
+
+    Merge pull request #30 from the-compiler-wizards/node-pos-1
+    
+    Simplify line and column setting for typechecking purposes
+
+commit 8c123832c5ea721ec69fba32833d275d163f116f
+Author: apd67 <apd67@cornell.edu>
+Date:   Sun Mar 21 14:15:52 2021 -0400
+
+    removed extraneous line
+
+commit e0bb7935b9de26dc6c236f5d115ac2d383cf0951
+Author: apd67 <apd67@cornell.edu>
+Date:   Sun Mar 21 14:14:46 2021 -0400
+
+    Implemented automatic returnType resetting when context returns to top level scope
+
+commit 3ec2886647ab58502740a1b3d4dee3248d1a1ea3
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 13:42:50 2021 -0400
+
+    Create a type for methods
+
+commit d41e333f04d177a450e30cc21436da132f4b2360
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 13:42:28 2021 -0400
+
+    Add equality to declarations
+    - use Node type rather than create redundant code
+
+commit 31bf480f14099f8f2cb2f0f7edb79ebf9b1d7c6c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 13:39:31 2021 -0400
+
+    make type protected to simplify declaration logic
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit cd2c71a8f04f42a8ef3b126326fe1ab51f86d423
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 12:30:26 2021 -0400
+
+    Simplify line and column setting for typechecking purposes
+
+commit 9fce0f5c92d8eccc0a21051d79f4d2a4736fc07d
+Merge: e86b7e8 9354aa4
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 12:23:23 2021 -0400
+
+    Merge pull request #29 from the-compiler-wizards/node-pos-1
+    
+    Add getters and setters for node lines and columns
+
+commit 9354aa4b1e23e3a3ac7ffddf76486a261299a5fd
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 12:21:27 2021 -0400
+
+    add getters and setters for columns and lines
+
+commit d44140121fbc259eb17ac4633ee44945b721777d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 12:19:22 2021 -0400
+
+    make filewriter generation cleaner
+
+commit e86b7e846ec31adfe621ec12ba38c023b5441666
+Merge: 1994c76 dcca954
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Sun Mar 21 12:12:43 2021 -0400
+
+    Merge pull request #27 from the-compiler-wizards/typechecking
+    
+    Typechecking
+
+commit dcca9547d7bc0dcd489ce67c64150eb9c96cc391
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 12:10:23 2021 -0400
+
+    Fix .typed in wrong loc
+
+commit 5a527b20d6a7412775bbab47957d050b6117aae3
+Merge: e2a9eb4 1994c76
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 12:08:16 2021 -0400
+
+    Merge branch 'master' into typechecking
+
+commit 1994c76f8e12e1f4bb5d12c6662241368ee720ce
+Merge: bd8a5c9 a72ee70
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 11:30:57 2021 -0400
+
+    Merge pull request #26 from the-compiler-wizards/cli-2
+    
+    add pa3 cli option recognition
+
+commit a72ee70f221928ff35a17a3907ffbe49528dd872
+Merge: b46499c bd8a5c9
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 11:29:22 2021 -0400
+
+    Merge branch 'master' into cli-2
+
+commit bd8a5c96f6e80e9ab9df1bff2b13822174b50a77
+Merge: fb60500 9c36c3f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 21 11:28:52 2021 -0400
+
+    Merge pull request #24 from the-compiler-wizards/context
+    
+    Context implementation
+
+commit e2a9eb4d55f3a5a6c41a93cace90abdf0fe85975
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 00:58:41 2021 -0400
+
+    Identifier type checking added
+    
+    * Hard to test w/o contexts functional, seems correct
+    * Fixed error w/ methodDef visitChildren, do NOT want to visit the
+    identifier
+
+commit ffed11f2346c0f3633b73854bbfd308c24c50c12
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Mar 21 00:13:40 2021 -0400
+
+    Added typecheck for array access
+
+commit e597a29a276ba8cd276aa0c0477a9b8bdd0f8e14
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Mar 20 23:52:02 2021 -0400
+
+    Array binops and arr literals working properly
+
+commit b46499cef999de583cb1ed44f322f479af71b081
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 23:44:34 2021 -0400
+
+    Add typecheck, srcpath and libpath functionality to main
+
+commit c4db42ed60a2598564190492f5594029dd5e2f4f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 23:44:02 2021 -0400
+
+    fix javadoc typo
+
+commit f2c4728c340f5ada49cd6cdac5fbd272d98b7553
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 23:08:34 2021 -0400
+
+    add functionality to get the library and source path from the cli
+
+commit 3f73e2b250ee4425444c7557442be3d726834f5c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 22:49:42 2021 -0400
+
+    add srcpath, libpath and typecheck to the cli
+
+commit 9c36c3fcda6649d55bbe9191790ede1d8dea0d99
+Merge: febda6d ce6c36b
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Mar 21 02:07:37 2021 +0000
+
+    :Merge branch 'context' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into context
+
+commit febda6dcfe2f09e187b8b9b2c9b468736ddabd21
+Author: vagrant <vagrant@cs4120>
+Date:   Sun Mar 21 02:05:49 2021 +0000
+
+    Extracted type equals override to Type.java (minus ArrayType which gets its own override)
+
+commit ce6c36b3219720f084bbeb14fd4d7fb65ecd0365
+Merge: 2791c74 fb60500
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 21:01:37 2021 -0400
+
+    Merge branch 'master' into context
+
+commit fb605002ae431047b7eb0b6c7819133ca3afe1cf
+Merge: 46adf2b d3217a4
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 20:48:19 2021 -0400
+
+    Refactor the CLI
+    
+    Refactor the cli
+
+commit d3217a4a7b172113945c4856ef03c4255259691b
+Merge: 972fe6f 46adf2b
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 20:45:22 2021 -0400
+
+    Merge branch 'master' into CLI-1
+
+commit 46adf2bd53f9e2068ffeb477b77f1b60a4777b00
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 20:42:14 2021 -0400
+
+    Lint master and remove linter reliance on git (#23)
+    
+    * change the linting command to not rely on git
+    
+    * lint the code
+
+commit 972fe6fe648add2ec1ad7e509fc76cddadcc949f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Mar 20 20:35:25 2021 -0400
+
+    Refactor cli code
+    - handle parsing and lexing logic in main
+    - remove unnecessary cli code
+    - use Java FileNameUtils API
+    - add a prettyPrinter debug mode
+
+commit 7749a774d4e4139b50fb1fcb8894e7507138a7eb
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Mar 20 16:58:24 2021 -0400
+
+    Added typechecking for unops
+
+commit 5bdccf347ae07eae49ffc294a25a3e53069b49c4
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Mar 20 16:45:11 2021 -0400
+
+    Added array literals typechecking
+
+commit 1ff61182167acbddc76f7d84dd07608bbf24cbb6
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Mar 20 16:25:52 2021 -0400
+
+    All binops type checking except arrays
+
+commit 7801a50ccc5177c6d50ced2b952f8a2469d8056b
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Mar 20 15:18:38 2021 -0400
+
+    Fixed so new AST actually built
+
+commit 9ac178efe6418806469317ba6f52aa0c013e1954
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Mar 20 13:36:00 2021 -0400
+
+    Binop type checking added
+
+commit 2791c74a0f3e7c8a2b331c3ea3f8dc960ae9d764
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Mar 20 17:20:03 2021 +0000
+
+    removed classpath
+
+commit e0074204233d1ea5eae2f3e988e8d33665bf86fd
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Mar 20 17:17:46 2021 +0000
+
+    Removed old tester
+
+commit 98bd77a3c7e48d9136fc11d9b5b8367eb5a65633
+Author: vagrant <vagrant@cs4120>
+Date:   Sat Mar 20 17:09:42 2021 +0000
+
+    Linting on files + bug fixes on contextdefault implementation
+
+commit 0a038bde0c453209221a1f009885a297bc36386e
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Mar 20 12:10:57 2021 -0400
+
+    Linted
+
+commit dee70788fb214415123a88d779ec7d46b00e1ed4
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sat Mar 20 12:09:09 2021 -0400
+
+    Added framework to test typechecking in CLI
+
+commit 373cee0dd14db35c8424680929b26aa6423e6a3c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Mar 19 20:33:02 2021 -0400
+
+    Create cli functions that reduce the load of CLI
+
+commit 5757268296d1667d1e38f1e58b069646f5108c2b
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Fri Mar 19 15:39:01 2021 -0400
+
+    create hasOption method
+
+commit 4cdbf9f78b11dbeecff3903b3b9f67c341c9c17d
+Author: apd67 <apd67@cornell.edu>
+Date:   Fri Mar 19 00:13:31 2021 -0400
+
+    Small testing environment
+
+commit c3385e1bbe51585c474faa1165ba50f73336a119
+Author: apd67 <apd67@cornell.edu>
+Date:   Fri Mar 19 00:13:06 2021 -0400
+
+    Fixed import statements
+
+commit f13da13ecc4aaa80ee49217c59493ff99a99e3b1
+Merge: 2074a2c ef2f266
+Author: apd67 <apd67@cornell.edu>
+Date:   Thu Mar 18 23:56:13 2021 -0400
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into context
+
+commit ef2f266f75e27d9ac598ec660f89f6750d34b07c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 18 23:54:07 2021 -0400
+
+    Linting (#21)
+    
+    * add Google-java-format linting functionality
+    
+    * improve the build script
+
+commit f35336c6a807d67c844013766ed2af953cd70566
+Merge: e437e95 fa33449
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Thu Mar 18 23:43:32 2021 -0400
+
+    Merge pull request #22 from the-compiler-wizards/visitChildren
+    
+    Visit children
+
+commit fa3344946165e8cbc085906b1c1dbb53941165ab
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Mar 18 21:11:26 2021 -0400
+
+    Added visitChildren to rest of nodes
+    
+    - Also fixed minor issues around some classes not being abstract
+    - Added a couple constructors to make creating new nodes from existing
+    ones easier
+
+commit 6fa3dd85c9894262faac161bf1030a3940bdcc33
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Mar 18 19:38:02 2021 -0400
+
+    Added visitChildren for all literals and interfaces
+
+commit 2074a2c50c669a7421d39d04fdac54d3c240c04e
+Author: vagrant <vagrant@cs4120>
+Date:   Thu Mar 18 16:33:48 2021 +0000
+
+    Added appropriate throws statements
+
+commit 2b45ea2bb3e3edeb45d6ce9a924a80b357a0e7eb
+Author: apd67 <apd67@cornell.edu>
+Date:   Wed Mar 17 21:18:21 2021 -0400
+
+    Implemented all basic functions
+
+commit c3362f446f82ccfedfd5c36db061a9dea2ede8da
+Author: apd67 <apd67@cornell.edu>
+Date:   Wed Mar 17 21:11:27 2021 -0400
+
+    Began basic context implementation
+
+commit 74a2ac759c7398b215561d37fe7a8bb6c3d5d5c8
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Wed Mar 17 13:04:59 2021 -0400
+
+    VisitChildren added for binops
+
+commit e437e95d21d3d414423a75a11a834c0db27e9fca
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Wed Mar 17 12:38:51 2021 -0400
+
+    Added back return type to context
+
+commit fa36277060b9bb549d9bfbb2ec0591b12c22dc93
+Merge: f42be49 5bb0abb
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 17 12:30:21 2021 -0400
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler
+
+commit 5bb0abbbea4c7f5fc0346704eae73e4188051779
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Wed Mar 17 12:14:46 2021 -0400
+
+    Added return types to contex interface
+    
+    - Also tweaked typeCheck to work only on the TypeChecker visitor
+    - Added XiLexer.java~ to clean.sh
+
+commit f42be495611d45c8d9d5aa548c69611bc415e890
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 17 00:02:59 2021 -0400
+
+    Properly document interfaces
+
+commit f957a6ef2807e58318900b61e664fb6745edb2a3
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 16 23:27:41 2021 -0400
+
+    Add Exceptions to a bespoke package and Create a stubbed interface for type checking
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 2d6a426ced5f5eda92ac3321a8fb8afcace0086c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 16 00:39:37 2021 -0400
+
+    Update BuildAndLint.yml
+
+commit c1b0f377aebd7090d0fe2e665fb7fd04d0ac2f5d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 16 00:05:24 2021 -0400
+
+    remove yaml file
+
+commit 4a0c9a368435423fbaee7886cb0b97ae196e1bbb
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 16 00:04:19 2021 -0400
+
+    improve workflow
+
+commit 9726ac9a5aa6cd781743eb288dfa3e45999dfedc
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 16 00:02:56 2021 -0400
+
+    Update BuildAndLint.yaml
+
+commit 01324db259c65e203a7bedc4796c6f043af65a3a
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 15 23:54:51 2021 -0400
+
+    Linting and testing module
+
+commit 6351e535aaff1ee681c94a11dd54d10fcce522d7
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 23:35:16 2021 -0500
+
+    add test for loose statement
+
+commit 3598143b4134da2051ffe1bb4caf6bb6422fd447
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 23:27:11 2021 -0500
+
+    Improve submission script
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 05b93a91c143646bc63d42f5d67dc2d3fe5135da
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 23:25:56 2021 -0500
+
+    improve robustness of the parser test
+
+commit b488b1e06bc9e00baf67bd12a1f7be1c54ac298d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 23:25:01 2021 -0500
+
+    Improve javadoc specifications
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 7151c019defbf0f39d809f3ec25ff0a7753be66c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 22:28:36 2021 -0500
+
+    remove stmtb from grammar
+
+commit 0ddbb093b5785bd27773a2746744b9ac06e3169a
+Merge: 8e911dd cb89cf2
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 22:25:31 2021 -0500
+
+    https://github.coecis.cornell.edu/the-compiler-wizards/compiler
+
+commit 8e911ddc8a754266fa17b299d9e723e720558eba
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 22:23:51 2021 -0500
+
+    don't recognize stmts as lines
+
+commit cb89cf2a917b4a2ebcdba49376290bc3b0399492
+Merge: 011a9f4 e712f7f
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Mar 11 21:22:49 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 011a9f4bd6f2120a538a105dc7452e2a6ddb1786
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Mar 11 21:21:38 2021 -0500
+
+    Added and cleaned up parser tests
+
+commit e712f7f9ede115dae0ee6417ad059880d63cc361
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 17:47:28 2021 -0500
+
+    ignore parser.java
+
+commit 19b7cde8b6bb255b47672edbc7a11a28aea518e6
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 17:20:02 2021 -0500
+
+    remove duplicate lexerException file
+
+commit 6e1233d92d0de8643f4cd33ab1d3385560530f99
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 17:19:27 2021 -0500
+
+    improve submission script
+
+commit e56b7797b5af1d2472be98ca52c3a1c6c5ec58e5
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 17:18:31 2021 -0500
+
+    Add parserExceptions
+    - move parser and lexer Exceptions to util folder
+    - catch Exceptions correctly in the cli
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 4e84dfadb1d981bf7fb12e25845d9ceacf8318d1
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Mar 11 14:01:51 2021 -0500
+
+    Fixed cup/xic-build so script builds everywhere
+    
+    - Added clean script
+
+commit 3773c801052b1add843fa0ecbe193470495641ae
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Mar 11 11:42:26 2021 -0500
+
+    prettyprinting is working
+    - Add a Class for Binary Expressions
+    - Fix Character toString function
+    - Basic Parser error support
+    - Fix arrray Access error
+    - Advanced typing support
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 13b94085af4196d37fbada523ce474998a5950ff
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 10 22:54:08 2021 -0500
+
+    interfaces parsing correctly
+    - make a minor change to the lexer (comments /R was being recognized as the end of a comment)
+    - fix test script
+    - make Interface and MethodDeclaration classes
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 0c0447c2248225da17e5efecbb6c3f177f9c2511
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 10 13:35:07 2021 -0500
+
+    revamp parser
+
+commit 626f9a7b9ab1e36f81fa96810053f4721f5d4c8f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 10 13:27:06 2021 -0500
+
+    Overload Return constructor
+
+commit fc283d6392fe7563e0c54397035e01f508916cad
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 10 13:26:16 2021 -0500
+
+    Use PrintWriter
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit cac005e0c9d4ec1e9e503e4fd489752ff58f5267
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 10 07:45:47 2021 -0500
+
+    fix minor compilation error
+
+commit 59ebb1ca6cfb20a282bdaeceac56c14d80025200
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 10 07:42:33 2021 -0500
+
+    use Unified list prettyPrinting
+
+commit 877328999637d80bf398a6de598e32fe44b3dab2
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Wed Mar 10 07:41:31 2021 -0500
+
+    Create a type for array literals
+
+commit be0db0d01c0e8a82e5dba09fc5b92b04c623171f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 9 19:22:16 2021 -0500
+
+    Fix parser unop and binop fallthrough
+
+commit 360db4ef6debd6ee5f5132b065fdd04c4af3ff2e
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 9 19:21:28 2021 -0500
+
+    Switch symbols for braces and brackets
+
+commit 74e3cd353a4eeefdb1c1fe06b6cc1c0f2440771e
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 9 19:20:40 2021 -0500
+
+    fix minor codewriter issues
+
+commit 930505dd1df5d8372b985f0711497a601be2be2a
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Tue Mar 9 15:01:46 2021 -0500
+
+    Fix parser conflicts
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit b45e61a2fef189b4e5e82ae455bd9b2dc94dbaa7
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 8 18:36:30 2021 -0500
+
+    fix minor syntactical bugs
+
+commit 99fc844f82d6cf36d3b7937fe2a9377326e28ab6
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 8 18:31:40 2021 -0500
+
+    partial parser AST generation
+
+commit 03e7535ea9d6edd997f04fe767a5590316f53bc7
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 8 18:30:57 2021 -0500
+
+    Create AST classes
+
+commit edee858d47609d15e2568b7a3a55b05c5549cb22
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 8 18:30:11 2021 -0500
+
+    Add codeWriter
+
+commit b66614fe266fe49d20622a24c3459ade2460fa17
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 8 18:29:27 2021 -0500
+
+    Crete Literals
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 914b468019e19666af5dc40345a9ad5cc5a934ae
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Mar 8 12:56:42 2021 -0500
+
+    Added more nodes to the AST
+
+commit e0867563c12f5467225321cd6a996320998a27de
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Mar 8 12:17:27 2021 -0500
+
+    Make AST expressions
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit 2b9f559e57619c5e914b13d9351fc15e3ebbe2de
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 21:33:32 2021 -0500
+
+    Add Node interface
+
+commit aab83c56f6ffdb15d28edc7c1cf234b29f075b5a
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 21:33:04 2021 -0500
+
+    Add EOF lexing options
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit edb50e8efd7e2a49c3745196a576e3ad71873cf1
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 21:32:34 2021 -0500
+
+    Add loops to the parser
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+
+commit b28c698d139ec3fbb6d6dd8442cf668cfa4aae2b
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 16:47:32 2021 -0500
+
+    Add more lexer test cases
+
+commit 6ead9dd3bcc8ba27051b01e1a68da29825748b96
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 16:47:12 2021 -0500
+
+    Improved parser
+    - Recognize types
+    - Recognize unops
+    - Recognize binops
+
+commit ddefc4d714beac05a33b2ee019f595d2eb39e8bc
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 16:45:54 2021 -0500
+
+    Minor lexer modification
+    
+    Co-authored-by: apdettmer <apdettmer@users.noreply.github.com>
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit c1420fb8d4e29954b67c46717723b2901dc008a9
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 14:22:05 2021 -0500
+
+    Improve program grammar structure
+
+commit 371c578c84816b33e0fdb2d24c5e1efb21359d36
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 13:23:31 2021 -0500
+
+    Add function calls to grammar
+
+commit e645ddd796d65b0bc5d7d91bf766ffbc7c31779c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 12:29:48 2021 -0500
+
+    Minor changes to the cup script
+
+commit d3e1bed176bed7f6818781e548953daea0ab5c05
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 12:29:11 2021 -0500
+
+    Improve gitignore
+    - Ignore .DS_store
+    - Don't ignore java_cup.jar
+
+commit f668cc9c7fdc16a2323eb2c31335ff594d9dcfa2
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 12:28:01 2021 -0500
+
+    Create makeshift AST file structure
+    - Add stub files that will be improved upon
+
+commit d1ebb2f2456083336e45d792e47c875ae2198cda
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 12:26:53 2021 -0500
+
+    Improve lexer
+    - Add a COMMENT state
+    - Improve robustness of lexer testing suite
+
+commit 171f4be73d95eb08252a72eea45a02057c999f57
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 12:25:08 2021 -0500
+
+    Remove XiLexer.java before building
+
+commit 215c8a44aa85bcf112abe49db8f7f6cb0915849f
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sun Mar 7 12:22:54 2021 -0500
+
+    Improve grammar stucture
+    - Add declaration
+    - Add array acces expressions
+    
+    Co-authored-by: Jack Nash <JackRNash@users.noreply.github.com>
+
+commit 1c30f06b335c96267b865f878900e31f3378c442
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Wed Mar 3 10:49:53 2021 -0500
+
+    Barebones implementation of grammar for parsing
+
+commit ef00ae14489128e8a110134fdb1f285f88062a92
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Mar 1 13:30:58 2021 -0500
+
+    Made unique tokens for each symbol
+
+commit 432d137c660f3cb09692a1f16b900fcf390feae1
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 22:09:15 2021 -0500
+
+    Improve Cli.java documentation
+
+commit 02002a4d127ec4b384204b8644e9b5be876f8fe6
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 22:02:54 2021 -0500
+
+    Additional formatting
+
+commit fb9b41247fd27e7011769852fd00113f46ee2e42
+Merge: 2e67422 50e5bdd
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 22:01:56 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+
+commit 2e67422a0a4e3cdee7d7bfed46a8abc00e09da80
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 22:01:49 2021 -0500
+
+    Code formatting
+
+commit 50e5bddd532eb43b06019a6e44fed2992a6ed52b
+Merge: 70590ce 4dd8b32
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 21:37:49 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 70590ce94968493d04ba83bc050f7fc39600df8d
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 21:37:42 2021 -0500
+
+    Code cleanup
+
+commit 4dd8b32221331b139f81096631ad63f0410222d4
+Merge: 7b6c348 3c2420a
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 21:28:40 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+
+commit 7b6c348f57bd89e3bcf22b48621ba0e42aaf316c
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 21:28:18 2021 -0500
+
+    Functionality for variable number of leading zeroes (at most 3, depending on particular) in hex to escape character conversion
+
+commit 3c2420a4c16ddea860dcc560e9b999da0f0dc7d0
+Merge: 792255a 65757cf
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 20:45:41 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 792255a0d8944a7ade8d2d01da3cc832e1ee0eaf
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 20:45:26 2021 -0500
+
+    Added missing cached external library
+
+commit 65757cfc5881a43280f086375d746e07a2e79b20
+Merge: 0fd7b03 4cffdb4
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 20:43:43 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+
+commit 0fd7b0304b1af187a4ff736baff95e0e0346109d
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 20:43:39 2021 -0500
+
+    remove stray asterisk in hex conversion
+
+commit 49c7739cc61bbd04a0eb44695f8d7e930021350e
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 20:42:48 2021 -0500
+
+    Test extra escape character hex conversions
+
+commit 4cffdb468f82337a421a0182388830b8d14f53b3
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 20:33:43 2021 -0500
+
+    Added a test case for nonprintable characters
+
+commit 9d18c6a4420a4b1bdc96b154da25b4192d1420a9
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 20:30:30 2021 -0500
+
+    Removed deletetion of XiLexer.java from xic-build
+
+commit 044efc7ab352725d804e841c33cde773391d9313
+Merge: 6a20790 d474ab0
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 20:16:00 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 6a20790da945e79a8f98a4bb86d450f897f2e2bd
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 20:15:55 2021 -0500
+
+    Made xic and xic-build work when run from any working directory
+
+commit d474ab0f0b2f67c238f2dab073188fe97d12c612
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 20:11:40 2021 -0500
+
+    Add conversion for unicode of common non-printable characters
+
+commit 208ccd03d634e7c3a6383e1bba9e7f2767b804cf
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 19:56:43 2021 -0500
+
+    Modified line endings so all files are *nix format
+
+commit 8272cde38bcd25d3f1d339bbc3a0c72499b432fc
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 19:17:21 2021 -0500
+
+    Added script for easy running of test suite
+
+commit 02de6ba1b1ab2418df8f00cd6681894434fa9803
+Merge: 4fec261 58b5b56
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 19:16:17 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 4fec261140f59bab4a0274b39cdb544967c8ed68
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 19:15:50 2021 -0500
+
+    Fixed submit.sh exluding lexer-generated java file
+
+commit 58b5b56c58e4b1566b2575741bea779528c6b3b2
+Merge: 4470bae d4dea3c
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 19:15:11 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+
+commit 4470baebb00e39f6957b9382ec186620edfb7e7d
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 19:15:05 2021 -0500
+
+    Remove case sensitivity from hard-coded unicode escape character conversion
+
+commit d4dea3c6db66b1f8dc154d0d5297f945004c7fc2
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 19:06:31 2021 -0500
+
+    Added .gitattributes to fix line endings as recommended by TA on Ed
+
+commit 0809b851367343818a11ba95b6fd566791a69996
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 18:30:09 2021 -0500
+
+    Changed behavior of Cli.java when given nonexistent or non-xi files
+
+commit 34c5a228d35399694a02fcabbc6dd4a41b38eaec
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 17:51:40 2021 -0500
+
+    Added new test, modified previous tests for new spec
+
+commit 7fbaa4691c445e68ea36e9e2a263f608321f0b8c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 17:41:00 2021 -0500
+
+    Change main file to reflect new packages
+
+commit 247ad171fd5c9f3763718a586de9e473639372be
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 17:21:52 2021 -0500
+
+    Fix CLI dependencies
+
+commit c62a898d9ec35495d22b80ef4136dcbbc7d5caa8
+Merge: 2909013 760a39c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 17:20:34 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler
+
+commit 29090134bcb06b08c4a0a3943e708832c3003238
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 17:19:22 2021 -0500
+
+    Switch to Gladle-JFlex
+    - Rework file structure to account for this change
+
+commit 93302a0b8edca8e6e9aed042deb22ee24a255fae
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 17:18:32 2021 -0500
+
+    Ignore compiled lexer
+
+commit 760a39cf24e98b45303bbb157ccdafd77801192e
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 16:39:04 2021 -0500
+
+    Fixed row number bug
+
+commit 1e99f52b9461ad429efb97be65875161742303b1
+Merge: 34da6d0 537b427
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 15:21:41 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 34da6d0b6a4a78562cd502cbf6cac649285ae7a2
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 15:20:22 2021 -0500
+
+    Switched from jflex to gradle-jflex plugin
+
+commit 537b427d4190ceaf6d9ba0042e1ac09122ff0613
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 15:03:55 2021 -0500
+
+    Change gradle main class to reflect package changes
+
+commit ab2f2c986fed9cd2eef32bfc7db68564e6871382
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 14:57:33 2021 -0500
+
+    Changed Kleene Star to + to avoid matching empty string
+
+commit aad74eb7b69f3001e7e6df371fc0f18f6834d3a4
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 14:54:58 2021 -0500
+
+    Hard-coded unicode escape characters to get converted to string representation
+
+commit 6302aa775e81b8388394824fa7a8eb95b1dc5c1d
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 14:45:48 2021 -0500
+
+    move all test files to the same location
+
+commit 4396106cbb56669f687e7cf3b1fd989db56a8b29
+Merge: 00b3bbb f418dbb
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 14:38:14 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit f418dbbb286688cffc01e8ac68f33ffbff3d26c5
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 14:35:46 2021 -0500
+
+    Test for empty string
+
+commit 00b3bbb9ebeeaa7ef71d14a349bc07400a36cff6
+Merge: 388d698 bb58759
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 14:27:34 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 388d6986cd56d948e49be99ad95642e2c6340758
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 14:27:20 2021 -0500
+
+    Fixed typo in test
+
+commit bb587599a032e711bfe69cf13dc7e48305b04e24
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 14:26:27 2021 -0500
+
+    Improve file structure
+    - Make packages reflect file structure
+    - Make Tokens public
+    - Improve naming
+
+commit f719e450ace13c13e0bdd2d237c901ede4be8163
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 14:18:36 2021 -0500
+
+    Moved multiline test
+
+commit 38676382290ff1e7d16becf9ebce6eb7196e294b
+Merge: 1c20e80 5f75bc4
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 14:16:06 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 1c20e80b50d81b520ee5d86bd3d300c8202f8ca9
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 14:15:56 2021 -0500
+
+    Removed redundant testing files
+
+commit 5f75bc434dfca421abc5b16faa23742491b07831
+Merge: fc5bb7f ced88eb
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 14:15:45 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+
+commit fc5bb7f2e1f5b2be85fd92e08f9c6a08f73d61d4
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 14:15:38 2021 -0500
+
+    Testing that multi-line string produces an error
+
+commit ced88eb7445b3215977193b907c1567f6143e052
+Merge: af3530d abe4e1c
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 14:14:22 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit af3530d1b835965c5014b482b9139f728ecf2ee5
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 14:14:15 2021 -0500
+
+    Added .lexedsol files for tests, added tests to xthScript
+
+commit abe4e1c82b110cbab59c1d75576136b75b8911ba
+Merge: ffd8236 1dbd8b7
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 14:02:49 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler
+
+commit ffd82369677b242d34c413e55dbc6213b8f18488
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 14:02:32 2021 -0500
+
+    improve lexer documentation
+
+commit 1dbd8b7ec72e771317e5236336b1c2497937d06d
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 13:59:57 2021 -0500
+
+    Moved error check to last line of file
+
+commit 55145e6ded62c7e5cb4a95b9d8f86f1d628526db
+Merge: bd99afd f62fc1a
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 13:30:35 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+
+commit bd99afdcd917c0220b8bf5b18ca8a0cd4b03a532
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 13:30:24 2021 -0500
+
+    Cleaned string recognition expressions
+
+commit f62fc1ac8a654f1d0e04ea1dad1754a69422e770
+Merge: 6d9c80f 4062642
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 13:21:38 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 6d9c80fa76bd53ba283e755b0c0ba89790bf4402
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 13:21:23 2021 -0500
+
+    Fixed -D option
+
+commit 4062642ce2e4bee3715dc5963f5a5f40865050bb
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 13:09:45 2021 -0500
+
+    Bug fix - \ now reserved as escape character for string and character literals
+
+commit 2a6a442226aad15d911da136a7638af4420d00d2
+Merge: 87cc726 0936a8c
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 12:56:48 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+
+commit 87cc72659df616e4b5db0b075edbbcfd9bd11824
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 12:53:39 2021 -0500
+
+    Added escape character recognition for character literals - just \\, \n, and \'
+
+commit 0936a8c2ea1b63d54dbb8a16590fe622e8ca104f
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 12:46:15 2021 -0500
+
+    Fixed custom xth script
+
+commit f5721ec4abb9c22247caa6af0782fcb68086ac13
+Merge: 56feaff 9361fe4
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 12:33:07 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 56feaffe2fa91741fc830b346eef3a84bf45c7f4
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 12:32:52 2021 -0500
+
+    Added custom test for identifiers
+
+commit 9361fe4fc8fa734b92f1c0ef17306e27f8d20404
+Merge: ab00aa8 9f22c33
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 12:28:43 2021 -0500
+
+    Merge branch 'master' of https://github.coecis.cornell.edu/the-compiler-wizards/compiler into master
+
+commit ab00aa8b7e39abd8a06ea1272a647cdf44046625
+Author: apd67 <apd67@cornell.edu>
+Date:   Mon Feb 22 12:28:27 2021 -0500
+
+    Added example test file
+
+commit 9f22c33e658769a332d2026eebe4079b7bc30bf1
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 12:26:50 2021 -0500
+
+    Minor additions to the test of character escapes
+
+commit 34bba427c211b29441b79d10d248d197fa8ebc6b
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 12:20:50 2021 -0500
+
+    Added test for lexing character literals
+
+commit 95aecf34dc3829c78bf9a7075f39974735a85f24
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 12:12:11 2021 -0500
+
+    Added test files
+
+commit 1f380a5a02897d2bbefd224baead6f3618cbc5ee
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 11:51:33 2021 -0500
+
+    Minor change to detection of non .xi files
+
+commit c596816d1859353ea136a67ba316ce9dd32be719
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Mon Feb 22 10:34:21 2021 -0500
+
+    Remove unused lexer Macros
+
+commit 915eb93d89675c1af51e525311e69a6868f30a41
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Mon Feb 22 00:37:24 2021 -0500
+
+    Fixed submit.sh
+
+commit e31532eb38a641ce19045c687a389a3eb2a449c6
+Merge: 57050b3 f1c8e2b
+Author: lz359 <lz359@cornell.edu>
+Date:   Mon Feb 22 00:35:42 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 57050b37672379fce99af912fcc6e533d89b7ae5
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Feb 22 05:29:04 2021 +0000
+
+    Improve lexer and fix bugs
+
+commit 2a36afdedafa14427f6385cc6a74cae7b1a90651
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Feb 22 05:28:41 2021 +0000
+
+    Script for zipping submission components
+
+commit 7bceb84574e0a7d73d4f5075bf8dd6322ceac3a1
+Author: vagrant <vagrant@cs4120>
+Date:   Mon Feb 22 05:24:22 2021 +0000
+
+    Ignore zip files
+
+commit f1c8e2b4acc6a1bd1a5e9f3d7c60ca8317d2aadc
+Merge: 10b0cf1 d3fe38c
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Feb 21 22:49:32 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 10b0cf1a66d1d7bf201ad8cc79b9e0e544019f51
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Feb 21 22:49:08 2021 -0500
+
+    Added script for archiving code for submission
+
+commit d3fe38c90e8328629a571b4d0061d1c84dcbaaad
+Author: lz359 <lz359@cornell.edu>
+Date:   Sun Feb 21 20:32:52 2021 -0500
+
+    Added more functionality to the CLI
+
+commit 529ece5799b6830f290f3fc7f6ec311dee8e56e6
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Feb 21 17:58:07 2021 -0500
+
+    Added cached jars to git repo
+
+commit 00c6e9d99ef6ea74ac05ef8af376abd3fcc25208
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Feb 21 17:44:22 2021 -0500
+
+    Converted build.gradle to build offline
+
+commit bfc27f87fa4a46e495254e31ecbe28d0306eaef5
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Feb 21 17:15:18 2021 -0500
+
+    Code cleanup
+
+commit e0c424b12c8ca430787000d17c03c7c147fee0ac
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Feb 21 12:46:48 2021 -0500
+
+    Added a basic CLI
+
+commit b14e4ca6f7cc951520b8ad883c17f84506f12bf8
+Merge: 3ea837d 2595cdd
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Feb 21 11:33:12 2021 -0500
+
+    Merge branch 'master' of github.coecis.cornell.edu:the-compiler-wizards/compiler
+
+commit 3ea837d6b455e107034520e206b59779f01b0e84
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Sun Feb 21 11:32:36 2021 -0500
+
+    Gradle compiles added plugin (CLI commons)!
+
+commit 2595cdddac38faf04f458a88924db298a702a2ed
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Feb 20 20:58:47 2021 -0500
+
+    Lex Strings and Characters
+    
+    Co-authored-by: apd67 & coa22
+
+commit 29c81c579435bd741dc9c3579b27783be216fe34
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Feb 20 13:41:20 2021 -0500
+
+    Start String and Comment matching
+    Co-authored-by: apd67, coa22
+
+commit ace75699ea413c3cf2c3363cf04ac14dbc980a1c
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Feb 20 12:38:09 2021 -0500
+
+    Create basic Lexer Flex file
+
+commit a8014ffdd1b4c995c8efc78701e2e0a0347c80ca
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Feb 20 12:37:34 2021 -0500
+
+    Add Lexer testing code
+
+commit e1d9a8cf279d0f0e0a65dc984a3f267c66f9f588
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Sat Feb 20 12:37:09 2021 -0500
+
+    Compile a list of tokens
+
+commit fcc14b4c3a840180b26e74ec985928485cd257b6
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Feb 19 11:38:02 2021 -0500
+
+    Minor gradle bug fix (prevents building)
+    
+    * Added back attribute specifying manifest
+
+commit f07b13279064dbfabd082284ba4c4ccf34a9c8cb
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Feb 19 11:19:39 2021 -0500
+
+    Changed from Java library to Java app
+    
+    * modified xic-build so that it always builds in offline mode
+
+commit 1f0887d5d9d621946aa23feff7e1e2950e25cb3a
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Feb 19 11:11:19 2021 -0500
+
+    Compilable and runnable
+
+commit 0a7ba2f1df0e8e9cdcf9dd763decc70585e34851
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Feb 19 10:15:30 2021 -0500
+
+    Added xic script
+
+commit c3e2605ac65ed2ecdd61d82f2e9384db66278e5a
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Fri Feb 19 10:00:02 2021 -0500
+
+    Added initial build script
+
+commit 9b2af84eaee3fdff9fe1a6fa12948f5b2fb64b54
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Feb 18 21:21:01 2021 -0500
+
+    Gradle init
+
+commit 923ca1c4aa1b4586ad4dcfbf4dee121cb370cfdc
+Author: Obi Abii <coa22@cornell.edu>
+Date:   Thu Feb 18 21:19:40 2021 -0500
+
+    Add gradle gitignore
+
+commit d7c93c47e52b580b6b15fa17447ecc74a0172d24
+Author: jrn79 <jrn79@cornell.edu>
+Date:   Thu Feb 18 21:13:21 2021 -0500
+
+    Gradle setup
+
+commit 48890f954a0466ee461234bfa78d232f6a247bea
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Thu Feb 18 20:25:27 2021 -0500
+
+    Create .gitignore
+
+commit 60f813d7cc23e178da0a93ed91e6a7b4596cb31a
+Author: Jack R Nash <jrn79@cornell.edu>
+Date:   Thu Feb 18 20:24:53 2021 -0500
+
+    Create README.md

@@ -1,0 +1,21 @@
+1:1 id Integer
+1:8 :
+1:9 int
+2:1 id bOoLeAn
+2:8 :
+2:9 bool
+3:1 id ARRAY
+3:6 :
+3:7 int
+3:10 [
+3:11 ]
+3:12 [
+3:13 ]
+3:15 =
+3:17 {
+3:18 string UPPERCASE
+3:29 ,
+3:31 string lowercase
+3:42 ,
+3:44 string mIXed Upper and lower cAsE
+3:72 }

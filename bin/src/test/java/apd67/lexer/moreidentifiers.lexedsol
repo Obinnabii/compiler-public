@@ -1,0 +1,19 @@
+1:1 id valid_identifier
+1:17 :
+1:18 int
+2:1 id Also'valid'''__123
+2:19 :
+2:20 bool
+3:1 _
+3:2 id not'valid
+3:11 :
+3:12 int
+3:15 [
+3:16 ]
+3:17 [
+3:18 ]
+4:1 integer 123
+4:4 id alsonotvalid123
+4:19 :
+4:20 int
+5:1 error:Lexing error

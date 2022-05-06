@@ -1,0 +1,181 @@
+# xth test script
+#
+# This file is a test script for xth (xic Test Harness).  It
+# conforms to the following grammar:
+#
+#   ScriptFile      ::= Commands+
+#   Command         ::= build
+#                     | CompilerTest
+#   CompilerTest    ::= TestKind (\(TestName\))? ([TestPath])? ("CmdLineArgs")?
+#                           { (FileTest;)* }
+#   TestKind        ::= xic
+#   TestName        ::= LitString
+#   FileTest        ::= Filenames Description? FailureSet?
+#   Filenames       ::= Filename+
+#   Description     ::= LitString
+#   FailureSet      ::= Failure (, Failure)*
+#   Failure         ::= \( ErrorKind \)
+#                     | \( ErrorKind, LitString \)
+#
+#   TestPath        :   the path to the test files, enclosed in quotes,
+#                       relative to the path given in xth's -testpath flag.
+#   CmdLineArgs     :   command-line arguments for xic
+#   Filename        :   the name of a file, interpreted from TestPath.
+#   LitString       :   a literal string, enclosed in quotes.
+#   ErrorKind       :   one of, or a unique prefix of one of the following
+#                       strings: "Lexical Error", "Syntax Error", or
+#                       "Semantic Error".
+#
+# xth runs the commands in order of appearance.
+
+# build compiler first
+build
+
+xic ("Test --help") "--help" {
+    ;
+}
+
+xic ("Test --irrun -sim") ["irtranslator_given"] "--irrun -sim -libpath ./src/test/java/apd67/irtranslator_given/" {
+    arracc01.xi;
+    arracc02.xi;
+    arracc03.xi;
+    arracc07.xi;
+    arracc08.xi;
+    binary01.xi;
+    binary06.xi;
+    binary08.xi;
+    binary09.xi;
+    binary10.xi;
+    binary12.xi;
+    length01.xi;
+    length02.xi;
+    localdecl06.xi;
+    localdecl13.xi;
+    localdecl14.xi;
+}
+
+xic ("Test --typecheck") ["typechecker"] "--typecheck -libpath ./src/test/java/apd67/typechecker/" {
+    # --Fix bugs from PA3--
+    badarrdec2.xi;
+    baduscoreassign.xi;
+    arrayfuncall.xi;
+    multiplefuncs.xi;
+    emptyarray.xi;
+    # ---------------------
+    return.xi;
+    scope.xi;
+    exprs.xi;
+    useio.xi;
+    badadd.xi;
+    badnot.xi;
+    badeq.xi;
+    badneg.xi;
+    badlength.xi;
+    badarrdec.xi;
+    badarracc.xi;
+    badfcall.xi;
+    badargs.xi;
+    badif.xi;
+    badifelse.xi;
+    badreturn.xi;
+    badseq.xi;
+    badwhile.xi;
+    nonprcall.xi;
+    badprcall.xi;
+    baddecl.xi;
+    mutualrec.xi;
+    fcallexprs.xi;
+}
+
+xic ("Test --typecheck") ["typechecker_given"] "--typecheck -libpath ./src/test/java/apd67/typechecker_given/" {
+    arrayinit.xi;
+    arrayinit2.xi;
+    arrayinit2-full.xi;
+    ex01.xi;
+    ex02.xi;
+    ex03.xi;
+    ex04.xi;
+    ex05.xi;
+    ex06.xi;
+    ex07.xi;
+    ex08.xi;
+    ex09.xi;
+    ex10.xi;
+    ex11.xi;
+    ex12.xi;
+    gcd.xi;
+    insertionsort.xi;
+    mdarrays.xi;
+    ratadd.xi;
+    ratadd-full.xi;
+    ratadduse.xi;
+    spec1.xi;
+    spec1-full.xi;
+    spec2.xi;
+    spec3.xi;
+}
+
+xic ("Test --parse") ["parser"] "--parse" {
+    // custom tests
+    all_binops.xi;
+    lits.xi;
+    blockstmt.xi;
+    minint.xi;
+    multioutput.xi;
+    uncomma.xi;
+    fcallindex.xi;
+    emptyarr.xi;
+    usea.xi;
+    length.xi;
+    arrbadind.xi;
+    arrsizedec.xi;
+    badint.xi;
+    blank.xi;
+    blanki.ixi;
+    uneof.xi;
+    uneofi.ixi;
+}
+
+xic ("Test --parse") ["parser_given"] "--parse" {
+    ex1.xi;
+    ex2.xi;
+    ex3.xi (Syntax, "Unexpected token +");
+    spec1.xi;
+    spec2.xi;
+    spec3.xi;
+    gcd.xi;
+    ratadd.xi;
+    ratadduse.xi;
+    insertionsort.xi;
+    arrayinit.xi;
+    arrayinit2.xi;
+    mdarrays.xi;
+    add.xi (Syntax, "Unexpected token +");
+    beauty.xi (Syntax, "Unexpected token ==");
+    io.ixi;
+}
+
+xic ("Test --lex") ["lexer"] "--lex" {
+    identifier.xi;
+    alluppercase.xi;
+    characterescapes.xi;
+    charliterals.xi;
+    moreidentifiers.xi;
+    multilinestring.xi;
+    nonprintable.xi;
+    operators.xi;
+    unclosedquotes.xi;
+    upperlowercase.xi;
+    moreescapes.xi;
+    onlycomment.xi;
+    commeof.xi;
+    doubleescchar.xi;
+    doublelitchar.xi;
+    maxint.xi;
+    minint.xi;
+    extrasingle.xi;
+    unclosedquote.xi;
+    dollar.xi;
+    bignum.xi;
+    dneesc.xi;
+}

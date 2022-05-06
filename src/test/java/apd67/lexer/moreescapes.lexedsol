@@ -1,0 +1,11 @@
+1:1 string \a
+2:1 character \a
+3:1 string \f
+3:8 string \f
+4:1 character \f
+4:8 character \f
+5:1 string \e
+6:1 character \e
+7:1 string \r
+8:1 character \t
+9:1 string \v
